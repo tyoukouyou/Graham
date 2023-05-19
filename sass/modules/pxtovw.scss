@@ -1,0 +1,9 @@
+@function px-to-vw($px) {
+    @return $px/1440*100vw;
+  }
+
+@function font-adapter ($px){
+  $fz: px-to-vw($px);
+  @return clamp(1px,#{$fz},#{$px}px);
+}
+

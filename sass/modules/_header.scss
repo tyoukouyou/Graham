@@ -1,0 +1,87 @@
+
+$background_color: #FFFFFF;
+$font_color1: #333333;
+$font_color2: #A2453A;
+$font_color4: #FFFFFF;
+$theme_color: #234670;
+@import 'pxtovw.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-color: $background_color;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+
+    img {
+        width: 238px;
+        height: 80px;
+    }
+
+    .item_ul {
+        display: flex;
+        flex-direction: row;
+        padding-right: 2.778vw;
+        margin-left: auto;
+        margin-right: 0;
+
+        li {
+            width: 8.333vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover,
+            &:hover * ,
+            &.active,
+            &.active * {
+                color: $font_color2;
+            }
+
+            a {
+                display: block;
+                color: $font_color1;
+                text-align: center;
+                margin: 0 auto;
+
+                span {
+                    font-family: NotoSansCJKjp;
+                    font-size: font-adapter(16);
+                    font-weight: bold;
+
+                }
+
+                p {
+                    font-family: Raleway;
+                    font-size: font-adapter(14);
+
+                }
+            }
+
+        }
+
+        .header_recruit {
+            background-color: $theme_color;
+
+            span {
+                font-family: NotoSansCJKjp;
+                font-size: font-adapter(16);
+                font-weight: bold;
+                color: $font_color4;
+            }
+
+            p {
+                font-family: Raleway;
+                font-size: font-adapter(14);
+                color: $font_color4;
+            }
+        }
+
+    }
+}

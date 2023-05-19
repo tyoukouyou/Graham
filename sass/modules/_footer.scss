@@ -1,0 +1,131 @@
+$theme_color: #234670;
+$font_color4: #FFFFFF;
+@import 'pxtovw.scss';
+
+.bottom_top {
+    height: 8.749vw;
+    background-color: $theme_color;
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    margin-bottom: -0.035vw;
+}
+.bottom {
+    width: 100%;
+    background-color: $theme_color;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+
+    .bottom_btn {
+        position: absolute;
+        top: 9.722vw;
+        right: 14.236vw;
+    }
+
+    .bottom_content {
+        width: 54.028vw;
+        margin: 0 auto;
+        padding-top: 15.278vw;
+    
+
+        .bottom_logo {
+            display: block;
+            margin: 0 auto;
+            width: 24.097vw;
+            height: 5.903vw;
+        }
+
+        .bottom_ul {
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+            justify-content: space-between;
+            margin-top: 9.722vw;
+            margin-bottom: 12.5vw;
+
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    display: block;
+                    color: $font_color4;
+                    text-align: center;
+                    margin: 0 auto;
+
+                    &:hover {
+                        opacity: 0.6;
+                    }
+
+                    span {
+                        font-family: NotoSansCJKjp;
+                        font-size: font-adapter(16);
+                        font-weight: bold;
+                    }
+
+                    p {
+                        font-family: Raleway;
+                        font-size: font-adapter(14);
+                    }
+                }
+
+            }
+        }
+    }
+
+    p {
+        font-family: NotoSansCJKjp;
+        font-size: font-adapter(16);
+        color: $font_color4;
+        text-align: left;
+        margin: 0 auto;
+        padding-bottom: 10.417vw;
+    }
+}
+
+
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #000000;
+
+    .footer_content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        a {
+            display: flex;
+            color: $font_color4;
+            font-weight: bold;
+            font-size: font-adapter(16);
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-left: 2.778vw;
+                margin-right: 0.417vw;
+            }
+        }
+
+        img {
+            margin-left: 4.444vw;
+        }
+
+        p {
+            font-size: font-adapter(16);
+            font-family: "NotoSansCJKjp";
+            font-weight: normal;
+            color: $font_color4;
+            margin-right: 4.514vw;
+            margin-left: auto;
+        }
+    }
+}

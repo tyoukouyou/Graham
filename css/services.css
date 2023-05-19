@@ -1,0 +1,389 @@
+@import '../css/init_style.css';
+.services .services_content .services_body .services_body_left h1 {
+  line-height: 1;
+  font-size: clamp(1px,7.6388888889vw,110px);
+  font-family: "Raleway";
+  font-weight: bold;
+  margin: 0;
+}
+
+.services .services_content .services_body .services_body_left h2 {
+  font-size: clamp(1px,2.4305555556vw,35px);
+  line-height: 1;
+  font-family: "NotoSansCJKjp";
+  font-weight: bold;
+  margin: 0;
+}
+
+.services02 .services02_container .services02_title p, .services01 .services01_container .services01_title p {
+  font-size: clamp(1px,2.0833333333vw,30px);
+  font-weight: bold;
+  font-family: "NotoSansCJKjp", sans-serif;
+  margin: 0;
+  padding: 20px 0 0;
+  text-align: center;
+}
+
+.services02 .services02_container .services02_title div, .services01 .services01_container .services01_title div {
+  display: block;
+  height: 1px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.services02 .services02_container .services02_title, .services01 .services01_container .services01_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services {
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 6.667vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.services .services_content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.services .services_content .services_body {
+  height: 55.556vw;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.services .services_content .services_body .bg_container {
+  height: 100%;
+}
+.services .services_content .services_body .bg_container img {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+.services .services_content .services_body .services_body_left {
+  margin-top: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 50vw;
+  margin-left: 2.778vw;
+}
+.services .services_content .services_body .services_body_left h1 {
+  width: 50vw;
+  color: #FFFFFF;
+}
+.services .services_content .services_body .services_body_left h2 {
+  color: #FFFFFF;
+  margin-top: 2.083vw;
+  margin-bottom: 2.778vw;
+}
+.services .services_content .services_body .services_body_right {
+  height: 20.833vw;
+  margin-right: 2.778vw;
+  margin-left: auto;
+}
+.services .services_content .services_body .services_body_right p {
+  font-size: clamp(1px,1.7361111111vw,25px);
+  color: #FFFFFF;
+  font-family: "NotoSansCJKjp";
+  font-weight: bold;
+  margin: 0;
+  margin-top: 40vw;
+}
+
+.services01 {
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 125px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+.services01 .services01_right {
+  width: 39.931vw;
+  position: absolute;
+  top: 0;
+  right: -4.861vw;
+}
+.services01 .services01_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 9.375vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.services01 .services01_container .services01_title {
+  width: 25vw;
+  height: 4.167vw;
+  margin: 0 auto;
+  color: #D89F1C;
+}
+.services01 .services01_container .services01_title p {
+  color: #D89F1C;
+}
+.services01 .services01_container .services01_title div {
+  width: 15vw;
+  border-bottom: 3px solid #D89F1C;
+}
+.services01 .services01_container .services01_content {
+  width: 91.389vw;
+  padding-top: 5.903vw;
+  margin-left: 2.778vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.services01 .services01_container .services01_content img {
+  width: auto;
+  width: 47.569vw;
+}
+.services01 .services01_container .services01_content .services01_content_list {
+  padding-left: 2.083vw;
+}
+.services01 .services01_container .services01_content .services01_content_list p {
+  width: 41.667vw;
+  font-size: clamp(1px,1.25vw,18px);
+  font-family: "NotoSansCJKjp";
+  line-height: 1.5;
+}
+.services01 .services01_container .services01_content .services01_content_list ul {
+  margin-top: 4.167vw;
+  height: 13.889vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.services01 .services01_container .services01_content .services01_content_list ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.services01 .services01_container .services01_content .services01_content_list ul li img {
+  width: 1.25vw;
+  height: 1.25vw;
+}
+.services01 .services01_container .services01_content .services01_content_list ul li p {
+  width: 41.667vw;
+  font-size: clamp(1px,1.3888888889vw,20px);
+  font-family: "NotoSansCJKjp";
+  line-height: 1.5;
+  margin-left: 1.042vw;
+}
+.services01 .services01_container .services_case {
+  width: 70vw;
+  margin-top: 6.944vw;
+}
+.services01 .services01_container .services_case span {
+  font-size: clamp(1px,1.6666666667vw,24px);
+  font-family: "NotoSansCJKjp";
+  font-weight: bold;
+  color: #000000;
+}
+.services01 .services01_container .services_case p {
+  font-size: clamp(1px,1.25vw,18px);
+  font-family: "NotoSansCJKjp";
+  color: #000000;
+  line-height: 1.5;
+  margin-top: 1.736vw;
+  margin-bottom: 4.861vw;
+}
+
+.services02 {
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 125px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+.services02 .services02_right {
+  width: 39.931vw;
+  position: absolute;
+  top: 0;
+  right: -4.861vw;
+}
+.services02 .services02_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 9.375vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.services02 .services02_container .services02_title {
+  width: 40vw;
+  height: 4.167vw;
+  margin: 0 auto;
+  color: #234670;
+}
+.services02 .services02_container .services02_title div {
+  width: 15vw;
+  border-bottom: 3px solid #234670;
+}
+.services02 .services02_container .services02_content {
+  width: 91.389vw;
+  padding-top: 5.903vw;
+  margin-left: 2.778vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.services02 .services02_container .services02_content img {
+  width: auto;
+  width: 47.569vw;
+}
+.services02 .services02_container .services02_content .services01_content_list {
+  padding-left: 2.083vw;
+}
+.services02 .services02_container .services02_content .services01_content_list p {
+  width: 41.667vw;
+  font-size: clamp(1px,1.25vw,18px);
+  font-family: "NotoSansCJKjp";
+  line-height: 1.5;
+}
+.services02 .services02_container .services02_content .services01_content_list ul {
+  margin-top: 4.167vw;
+  height: 13.889vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.services02 .services02_container .services02_content .services01_content_list ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.services02 .services02_container .services02_content .services01_content_list ul li img {
+  width: 1.25vw;
+  height: 1.25vw;
+}
+.services02 .services02_container .services02_content .services01_content_list ul li p {
+  width: 41.667vw;
+  font-size: clamp(1px,1.3888888889vw,20px);
+  font-family: "NotoSansCJKjp";
+  line-height: 1.5;
+  margin-left: 1.042vw;
+}
+.services02 .services02_container .services_case {
+  width: 70vw;
+  margin-top: 6.944vw;
+}
+.services02 .services02_container .services_case span {
+  font-size: clamp(1px,1.6666666667vw,24px);
+  font-family: "NotoSansCJKjp";
+  font-weight: bold;
+  color: #000000;
+}
+.services02 .services02_container .services_case p {
+  font-size: clamp(1px,1.25vw,18px);
+  font-family: "NotoSansCJKjp";
+  color: #000000;
+  line-height: 1.5;
+  margin-top: 1.736vw;
+  margin-bottom: 4.861vw;
+}
+
+.services_bottom {
+  width: 100%;
+  height: 20.833vw;
+  position: relative;
+}
+.services_bottom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: polygon(0% 70%, 0% 100%, 100% 100%);
+  clip-path: polygon(0% 70%, 0% 100%, 100% 100%);
+  background-color: #234670;
+  border: 0;
+}/*# sourceMappingURL=services.css.map */
