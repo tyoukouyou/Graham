@@ -7,3 +7,11 @@
   @return clamp(1px,#{$fz},#{$px}px);
 }
 
+@function spx-to-vw($spx) {
+  @return $spx/750*100vw;
+}
+
+@function sfont-adapter ($spx){
+$sfz: spx-to-vw($spx);
+@return clamp(1px,#{$sfz},#{$spx}px);
+}

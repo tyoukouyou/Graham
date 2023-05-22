@@ -1,6 +1,7 @@
 $theme_color: #234670;
 $font_color4: #FFFFFF;
 @import 'pxtovw.scss';
+@import '_variable.scss';
 
 .bottom_top {
     height: 8.749vw;
@@ -8,7 +9,12 @@ $font_color4: #FFFFFF;
     -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
     clip-path: polygon(0 0, 0% 100%, 100% 100%);
     margin-bottom: -0.035vw;
+
+    @media (max-width: 1000px) {
+        margin-bottom: -0.067vw;
+    }
 }
+
 .bottom {
     width: 100%;
     background-color: $theme_color;
@@ -17,25 +23,39 @@ $font_color4: #FFFFFF;
     flex-direction: column;
     justify-content: center;
 
-
-
     .bottom_btn {
         position: absolute;
         top: 9.722vw;
         right: 14.236vw;
+
+        @media (max-width: 1000px) {
+            position: absolute;
+            top: 24vw;
+            right: 12vw;
+        }
     }
 
     .bottom_content {
         width: 54.028vw;
         margin: 0 auto;
         padding-top: 15.278vw;
-    
+
+        @media (max-width: 1000px) {
+            width: 100%;
+            padding-top: 18.667vw;
+        }
+
 
         .bottom_logo {
             display: block;
             margin: 0 auto;
             width: 24.097vw;
             height: 5.903vw;
+
+            @media (max-width: 1000px) {
+                width: 46.267vw;
+                height: 11.333vw;
+            }
         }
 
         .bottom_ul {
@@ -45,6 +65,10 @@ $font_color4: #FFFFFF;
             justify-content: space-between;
             margin-top: 9.722vw;
             margin-bottom: 12.5vw;
+
+            @media (max-width: 1000px) {
+                display: none;
+            }
 
             li {
                 display: flex;
@@ -84,6 +108,14 @@ $font_color4: #FFFFFF;
         text-align: left;
         margin: 0 auto;
         padding-bottom: 10.417vw;
+        line-height: 1.5;
+
+        @media (max-width: 1000px) {
+            font-size: sfont-adapter(16);
+            margin-top: 18.667vw;
+            padding-bottom: 13.333vw;
+            line-height: 1.5;
+        }
     }
 }
 
@@ -109,14 +141,26 @@ footer {
             display: flex;
             align-items: center;
 
+            @media (max-width: 1000px) {
+                font-size: sfont-adapter(14);
+            }
+
             img {
                 margin-left: 2.778vw;
                 margin-right: 0.417vw;
+
+                @media (max-width: 1000px) {
+                    margin-left: 3.733vw;
+                    margin-right: 0.667vw;
+                }
             }
         }
 
         img {
             margin-left: 4.444vw;
+            @media (max-width: 1000px) {
+                margin-left: 3.333vw;
+            }
         }
 
         p {
@@ -126,6 +170,12 @@ footer {
             color: $font_color4;
             margin-right: 4.514vw;
             margin-left: auto;
+
+            @media (max-width: 1000px) {
+                font-size: sfont-adapter(1);
+                margin-right: 20.002px;
+                margin-left: auto;
+            }
         }
     }
 }

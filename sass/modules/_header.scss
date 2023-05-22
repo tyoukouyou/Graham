@@ -1,87 +1,174 @@
-
 $background_color: #FFFFFF;
 $font_color1: #333333;
 $font_color2: #A2453A;
 $font_color4: #FFFFFF;
 $theme_color: #234670;
 @import 'pxtovw.scss';
+@import '_variable.scss';
 
 * {
     padding: 0;
     margin: 0;
 }
+
 header {
     background-color: $background_color;
-    width: 100%;
-    height: 80px;
     display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
+    flex-direction: row;
 
-    img {
-        width: 238px;
-        height: 80px;
+    @media (max-width: 1000px) {
+        flex-direction: column;
     }
 
-    .item_ul {
+    .header_imgbox {
+        width: 100%;
+        height: 80px;
         display: flex;
-        flex-direction: row;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+
+        @media (max-width: 1000px) {
+            flex-direction: row;
+            height: 10.667vw;
+            background-color: $background_color;
+        }
+
+        .header_logo {
+            width: 16.527vw;
+            height: 80px;
+
+            @media (max-width: 1000px) {
+                width: 31.733vw;
+                height: 100%;
+            }
+        }
+
+        .header_menu {
+            display: none;
+
+            @media (max-width: 1000px) {
+                display: block;
+                height: 100%;
+                margin: 0 0 0 auto;
+            }
+        }
+    }
+
+    .header_nav {
+        height: 80px;
         padding-right: 2.778vw;
         margin-left: auto;
         margin-right: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
 
-        li {
-            width: 8.333vw;
+        @media (max-width: 1000px) {
+            display: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .item_ul {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            &:hover,
-            &:hover * ,
-            &.active,
-            &.active * {
-                color: $font_color2;
+            flex-direction: row;
+            color: $font_color1;
+            height: 100%;
+
+            @media (max-width: 1000px) {
+                flex-direction: column;
+                width: 100%;
+                height: 76.5vh;
+                justify-content: space-between;
+                background-color: $background_color;
+                margin-bottom: 50px;
+                margin-top: auto;
             }
 
-            a {
-                display: block;
-                color: $font_color1;
-                text-align: center;
-                margin: 0 auto;
+            li {
+                width: 8.333vw;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &:hover,
+                &:hover *,
+                &.active,
+                &.active * {
+                    color: $font_color2;
+                }
+
+                @media (max-width: 1000px) {
+                    width: 93.333vw;
+                    height: 10.667vw;
+                    margin: 0 auto;
+                    flex-direction: column;
+                }
+
+                a {
+                    display: block;
+                    color: $font_color1;
+                    text-align: center;
+                    margin: 0 auto;
+
+                    span {
+                        font-family: NotoSansCJKjp;
+                        font-size: font-adapter(16);
+                        font-weight: bold;
+                        color: $font_color1;
+
+                        @media (max-width: 1000px) {
+                            font-size: sfont-adapter(16);
+                        }
+
+                    }
+
+                    p {
+                        color: $font_color1;
+                        font-family: Raleway;
+                        font-size: font-adapter(14);
+
+                        @media (max-width: 1000px) {
+                            font-size: sfont-adapter(14);
+                        }
+                    }
+                }
+
+            }
+
+            .header_recruit {
+                background-color: $theme_color;
+
+                @media (max-width: 1000px) {
+                    background-color: $button_color;
+                }
+
 
                 span {
                     font-family: NotoSansCJKjp;
                     font-size: font-adapter(16);
                     font-weight: bold;
+                    color: $font_color4;
 
+                    @media (max-width: 1000px) {
+                        font-size: sfont-adapter(16);
+                        color: $font_color4;
+                    }
                 }
 
                 p {
                     font-family: Raleway;
                     font-size: font-adapter(14);
-
+                    color: $font_color4;
                 }
             }
 
         }
-
-        .header_recruit {
-            background-color: $theme_color;
-
-            span {
-                font-family: NotoSansCJKjp;
-                font-size: font-adapter(16);
-                font-weight: bold;
-                color: $font_color4;
-            }
-
-            p {
-                font-family: Raleway;
-                font-size: font-adapter(14);
-                color: $font_color4;
-            }
-        }
-
     }
+
 }
