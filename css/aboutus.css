@@ -203,6 +203,7 @@
   position: absolute;
   top: 0;
   right: -4.861vw;
+  z-index: -1;
 }
 .ideas .ideas_container {
   display: -webkit-box;
@@ -267,6 +268,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
 }
 .represents .represents_container {
   width: 66.319vw;
@@ -325,6 +327,7 @@
   position: absolute;
   top: 0;
   right: -4.861vw;
+  z-index: -1;
 }
 .employee .employee_container {
   display: -webkit-box;
@@ -414,6 +417,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
 }
 .company .company_container {
   width: 89.583vw;
@@ -473,6 +477,7 @@
   position: absolute;
   bottom: 10.278vw;
   right: 2.083vw;
+  z-index: -1;
 }
 .company .company_right:hover {
   cursor: pointer;

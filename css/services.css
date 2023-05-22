@@ -138,6 +138,7 @@
   position: absolute;
   top: 0;
   right: -4.861vw;
+  z-index: -1;
 }
 .services01 .services01_container {
   display: -webkit-box;
@@ -262,6 +263,7 @@
   position: absolute;
   top: 0;
   right: -4.861vw;
+  z-index: -1;
 }
 .services02 .services02_container {
   display: -webkit-box;

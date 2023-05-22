@@ -89,7 +89,7 @@
         position: absolute;
         top: 0;
         right: -4.861vw;
-
+        z-index: -1;
     }
 
     .ideas_container {
@@ -154,7 +154,7 @@
         position: absolute;
         top: 0;
         left: 0;
-
+        z-index: -1;
     }
 
     .represents_container {
@@ -221,7 +221,7 @@
         position: absolute;
         top: 0;
         right: -4.861vw;
-
+        z-index: -1;
     }
 
     .employee_container {
@@ -300,28 +300,12 @@
     box-sizing: border-box;
     position: relative;
 
-    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-    // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-    // &::before {
-    //     content: "";
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     -webkit-clip-path: polygon(0% 92.5%, 0% 100%, 100% 100%);
-    //     clip-path: polygon(0% 92.5%, 0% 100%, 100% 100%);
-    //     background-color: #234670;
-    //     border: 0;
-    // }
-
-
     .company_left {
         width: 39.931vw;
         position: absolute;
         top: 0;
         left: 0;
-
+        z-index: -1;
     }
 
     .company_container {
@@ -378,7 +362,7 @@
         position: absolute;
         bottom: 10.278vw;
         right: 2.083vw;
-
+        z-index: -1;
         &:hover {
             cursor: pointer;
             opacity: 0.6;
