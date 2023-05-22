@@ -89,7 +89,6 @@
 .news .news_content .news_btn, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_02, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_01, .recruit .recruit_title .recruit_title_btn .recruit_btn, .aboutus .aboutus_content .aboutus_body .aboutus_body_left .aboutus_btn, .top .top_content .top_btn {
   width: 18.056vw;
   height: 4.167vw;
-  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,70 +181,6 @@
   margin-top: 20px;
 }
 
-.news .news_content .news_btn, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_02, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_01, .recruit .recruit_title .recruit_title_btn .recruit_btn, .aboutus .aboutus_content .aboutus_body .aboutus_body_left .aboutus_btn, .top .top_content .top_btn {
-  width: 18.056vw;
-  height: 4.167vw;
-  display: block;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.news .news_content .news_btn div, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_02 div, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_01 div, .recruit .recruit_title .recruit_title_btn .recruit_btn div, .aboutus .aboutus_content .aboutus_body .aboutus_body_left .aboutus_btn div, .top .top_content .top_btn div {
-  width: 18.056vw;
-  height: 4.167vw;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  position: relative;
-  border-radius: 2.083vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.news .news_content .news_btn div span, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_02 div span, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_01 div span, .recruit .recruit_title .recruit_title_btn .recruit_btn div span, .aboutus .aboutus_content .aboutus_body .aboutus_body_left .aboutus_btn div span, .top .top_content .top_btn div span {
-  font-family: NotoSansCJKjp;
-  font-size: clamp(1px,1.1111111111vw,16px);
-  font-weight: bold;
-  color: #FFFFFF;
-}
-.news .news_content .news_btn div::after, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_02 div::after, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_01 div::after, .recruit .recruit_title .recruit_title_btn .recruit_btn div::after, .aboutus .aboutus_content .aboutus_body .aboutus_body_left .aboutus_btn div::after, .top .top_content .top_btn div::after {
-  content: "";
-  position: absolute;
-  right: 1.2em;
-  top: 48%;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  width: 1.806vw;
-  height: 1.042vw;
-  background-image: url(../res/top_arrow.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.news .news_content .news_btn div:hover, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_02 div:hover, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_01 div:hover, .recruit .recruit_title .recruit_title_btn .recruit_btn div:hover, .aboutus .aboutus_content .aboutus_body .aboutus_body_left .aboutus_btn div:hover, .top .top_content .top_btn div:hover {
-  opacity: 0.8;
-}
-.news .news_content .news_btn div:hover::after, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_02 div:hover::after, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_01 div:hover::after, .recruit .recruit_title .recruit_title_btn .recruit_btn div:hover::after, .aboutus .aboutus_content .aboutus_body .aboutus_body_left .aboutus_btn div:hover::after, .top .top_content .top_btn div:hover::after {
-  right: 0.5em;
-}
-
 .ajax_container {
   width: 100%;
 }
@@ -272,6 +207,10 @@
   .top .top_content {
     padding-top: 10.667vw;
     padding-bottom: 8vw;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 .top .top_content .top_top {
@@ -350,11 +289,71 @@
 }
 @media (max-width: 1000px) {
   .top .top_content .s_top_btn {
-    margin-top: 4vw;
     margin: 0 auto;
+    margin-top: 4vw;
     background-color: #D89F1C;
-    border-radius: 2.083vw;
+    border-radius: 4vw;
     z-index: 10;
+    width: 34.667vw;
+    height: 8vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .top .top_content .s_top_btn div {
+    width: 34.667vw;
+    height: 8vw;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative;
+    border-radius: 4vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .top .top_content .s_top_btn div span {
+    font-family: NotoSansCJKjp;
+    font-size: clamp(1px,2.1333333333vw,16px);
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+  .top .top_content .s_top_btn div::after {
+    content: "";
+    position: absolute;
+    right: 1.2em;
+    top: 48%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    width: 3.467vw;
+    height: 2vw;
+    background-image: url(../res/top_arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .top .top_content .s_top_btn div:hover {
+    opacity: 0.8;
+  }
+  .top .top_content .s_top_btn div:hover::after {
+    right: 0.5em;
   }
 }
 .top .top_content .top_imgshow {

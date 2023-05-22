@@ -2,7 +2,6 @@
 .news .news_container .news_btn {
   width: 18.056vw;
   height: 4.167vw;
-  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
