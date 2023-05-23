@@ -133,6 +133,7 @@
                         font-weight: bold;
                         color: $font_color4;
                     }
+
                     &::after {
                         content: "";
                         position: absolute;
@@ -147,11 +148,11 @@
                         background-repeat: no-repeat;
                         transition: 0.5s;
                     }
-            
+
                     &:hover {
                         opacity: 0.8;
                     }
-            
+
                     &:hover::after {
                         right: 0.5em;
                     }
@@ -238,6 +239,7 @@
     padding-bottom: 19.444vw;
     box-sizing: border-box;
     transform: skewY(-5deg);
+
     @media (max-width: 1000px) {
         width: 100%;
         padding-bottom: 18.667vw;
@@ -248,6 +250,7 @@
     .aboutus_content {
         display: flex;
         flex-direction: column;
+
         @media (max-width: 1000px) {
             display: flex;
             flex-direction: column;
@@ -258,6 +261,7 @@
             height: 27.361vw;
             background-color: #D89F1C;
             transform-origin: left bottom;
+
             @media (max-width: 1000px) {
                 width: 100%;
                 height: 38.667vw;
@@ -272,6 +276,7 @@
                 justify-content: center;
                 align-items: center;
                 height: 100%;
+
                 @media (max-width: 1000px) {
                     transform: skewY(5deg);
                     display: flex;
@@ -285,6 +290,7 @@
                     p {
                         @extend %home_p;
                         color: white;
+
                         @media (max-width: 1000px) {
                             // @extend %home_p;
                             font-size: sfont-adapter(30);
@@ -301,6 +307,16 @@
                         @extend %home_underline;
                         width: 18vw;
                         border-bottom: 3px solid white;
+
+                        @media (max-width: 1000px) {
+                            // @extend %home_underline;
+                            display: block;
+                            height: 1px;
+                            margin: 0 auto;
+                            margin-top: 2.667vw;
+                            width: 28.667vw;
+                            border-bottom: 3px solid white;
+                        }
                     }
                 }
 
@@ -314,7 +330,22 @@
             display: flex;
             flex-direction: row;
 
+            @media (max-width: 1000px) {
+                width: 100%;
+                position: relative;
+                bottom: 4vw;
+                display: flex;
+                flex-direction: column;
+                background: url(../res/s_aboutus_body_bg.png) no-repeat center center;
+            }
+
             .video_container {
+                height: 100%;
+
+                @media (max-width: 1000px) {
+                    // height: 100%;
+                    display: none;
+                }
 
                 video {
                     width: 100%;
@@ -322,6 +353,15 @@
                     top: 0;
                     left: 0;
                     z-index: -1;
+
+                    @media (max-width: 1000px) {
+                        display: none;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                    }
 
                 }
 
@@ -336,10 +376,26 @@
                 width: 50vw;
                 margin-left: 2.778vw;
 
+                @media (max-width: 1000px) {
+                    transform: skewY(5deg);
+                    margin-top: 16vw;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-left: 0;
+                    padding-left: 4.667vw;
+                }
+
                 h1 {
                     @extend %home_h1;
                     width: 50vw;
                     color: $font_color4;
+
+                    @media (max-width: 1000px) {
+                        width: auto;
+                        font-size: sfont-adapter(100);
+
+                    }
                 }
 
                 h2 {
@@ -347,6 +403,12 @@
                     color: white;
                     margin-top: 2.083vw;
                     margin-bottom: 2.778vw;
+
+                    @media (max-width: 1000px) {
+                        font-size: sfont-adapter(30);
+                        margin-top: 4vw;
+                        margin-bottom: 0;
+                    }
                 }
 
                 .aboutus_btn {
@@ -354,6 +416,10 @@
                     background-color: rgba(0, 0, 0, 0);
                     border-radius: 2.083vw;
                     border: 1px solid white;
+
+                    @media (max-width: 1000px) {
+                        display: none;
+                    }
                 }
 
             }
@@ -364,6 +430,11 @@
                 margin-right: 2.778vw;
                 margin-left: auto;
 
+                @media (max-width: 1000px) {
+                    margin: 0 auto;
+                    transform: skewY(5deg);
+                }
+
                 p {
                     font-size: font-adapter(25);
                     color: white;
@@ -371,6 +442,34 @@
                     font-weight: bold;
                     margin: 0;
                     margin-top: 40vw;
+
+                    @media (max-width: 1000px) {
+                        font-size: sfont-adapter(20);
+                        color: white;
+                        font-family: "NotoSansCJKjp";
+                        font-weight: bold;
+                        line-height: 1.5;
+                        margin: 0;
+                        margin-top: 12.667vw;
+                    }
+                }
+            }
+
+            .s_aboutus_btn {
+                @extend %s_home_btn;
+        
+                background-color: rgba(0, 0, 0, 0);
+                border-radius: 4vw;
+                border: 1px solid white;
+                transform: skewY(5deg);
+                margin: 0  auto;
+          
+                display: none;
+
+                @media (max-width: 1000px) {
+                    display: block;
+                    margin-top: 16.667vw;
+                    margin-bottom: 12.667vw;
                 }
             }
         }

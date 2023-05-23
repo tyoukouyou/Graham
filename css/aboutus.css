@@ -13,8 +13,8 @@
           justify-content: space-between;
 }
 .employee .employee_container .employee_list .employee_item .employee_btn div {
-  width: 18.056vw;
-  height: 4.167vw;
+  width: 100%;
+  height: 100%;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   position: relative;

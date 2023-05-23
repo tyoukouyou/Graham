@@ -100,8 +100,8 @@
           justify-content: space-between;
 }
 .news .news_content .news_btn div, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_02 div, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_01 div, .recruit .recruit_title .recruit_title_btn .recruit_btn div, .aboutus .aboutus_content .aboutus_body .aboutus_body_left .aboutus_btn div, .top .top_content .top_btn div {
-  width: 18.056vw;
-  height: 4.167vw;
+  width: 100%;
+  height: 100%;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   position: relative;
@@ -146,6 +146,69 @@
   opacity: 0.8;
 }
 .news .news_content .news_btn div:hover::after, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_02 div:hover::after, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_01 div:hover::after, .recruit .recruit_title .recruit_title_btn .recruit_btn div:hover::after, .aboutus .aboutus_content .aboutus_body .aboutus_body_left .aboutus_btn div:hover::after, .top .top_content .top_btn div:hover::after {
+  right: 0.5em;
+}
+
+.aboutus .aboutus_content .aboutus_body .s_aboutus_btn {
+  width: 34.667vw;
+  height: 8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.aboutus .aboutus_content .aboutus_body .s_aboutus_btn div {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+  border-radius: 4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.aboutus .aboutus_content .aboutus_body .s_aboutus_btn div span {
+  font-family: NotoSansCJKjp;
+  font-size: clamp(1px,2.1333333333vw,16px);
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.aboutus .aboutus_content .aboutus_body .s_aboutus_btn div::after {
+  content: "";
+  position: absolute;
+  right: 1.2em;
+  top: 48%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  width: 3.467vw;
+  height: 2vw;
+  background-image: url(../res/top_arrow.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.aboutus .aboutus_content .aboutus_body .s_aboutus_btn div:hover {
+  opacity: 0.8;
+}
+.aboutus .aboutus_content .aboutus_body .s_aboutus_btn div:hover::after {
   right: 0.5em;
 }
 
@@ -546,6 +609,16 @@
   width: 18vw;
   border-bottom: 3px solid white;
 }
+@media (max-width: 1000px) {
+  .aboutus .aboutus_content .aboutus_top .aboutus_top_title .aboutus_top_text-container .aboutus_top_underline {
+    display: block;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 2.667vw;
+    width: 28.667vw;
+    border-bottom: 3px solid white;
+  }
+}
 .aboutus .aboutus_content .aboutus_body {
   width: 100%;
   position: relative;
@@ -558,12 +631,45 @@
       -ms-flex-direction: row;
           flex-direction: row;
 }
+@media (max-width: 1000px) {
+  .aboutus .aboutus_content .aboutus_body {
+    width: 100%;
+    position: relative;
+    bottom: 4vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: url(../res/s_aboutus_body_bg.png) no-repeat center center;
+  }
+}
+.aboutus .aboutus_content .aboutus_body .video_container {
+  height: 100%;
+}
+@media (max-width: 1000px) {
+  .aboutus .aboutus_content .aboutus_body .video_container {
+    display: none;
+  }
+}
 .aboutus .aboutus_content .aboutus_body .video_container video {
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
+}
+@media (max-width: 1000px) {
+  .aboutus .aboutus_content .aboutus_body .video_container video {
+    display: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
 }
 .aboutus .aboutus_content .aboutus_body .aboutus_body_left {
   -webkit-transform: skewY(5deg);
@@ -582,25 +688,69 @@
   width: 50vw;
   margin-left: 2.778vw;
 }
+@media (max-width: 1000px) {
+  .aboutus .aboutus_content .aboutus_body .aboutus_body_left {
+    -webkit-transform: skewY(5deg);
+            transform: skewY(5deg);
+    margin-top: 16vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: 0;
+    padding-left: 4.667vw;
+  }
+}
 .aboutus .aboutus_content .aboutus_body .aboutus_body_left h1 {
   width: 50vw;
   color: #FFFFFF;
+}
+@media (max-width: 1000px) {
+  .aboutus .aboutus_content .aboutus_body .aboutus_body_left h1 {
+    width: auto;
+    font-size: clamp(1px,13.3333333333vw,100px);
+  }
 }
 .aboutus .aboutus_content .aboutus_body .aboutus_body_left h2 {
   color: white;
   margin-top: 2.083vw;
   margin-bottom: 2.778vw;
 }
+@media (max-width: 1000px) {
+  .aboutus .aboutus_content .aboutus_body .aboutus_body_left h2 {
+    font-size: clamp(1px,4vw,30px);
+    margin-top: 4vw;
+    margin-bottom: 0;
+  }
+}
 .aboutus .aboutus_content .aboutus_body .aboutus_body_left .aboutus_btn {
   background-color: rgba(0, 0, 0, 0);
   border-radius: 2.083vw;
   border: 1px solid white;
+}
+@media (max-width: 1000px) {
+  .aboutus .aboutus_content .aboutus_body .aboutus_body_left .aboutus_btn {
+    display: none;
+  }
 }
 .aboutus .aboutus_content .aboutus_body .aboutus_body_right {
   -webkit-transform: skewY(5deg);
           transform: skewY(5deg);
   margin-right: 2.778vw;
   margin-left: auto;
+}
+@media (max-width: 1000px) {
+  .aboutus .aboutus_content .aboutus_body .aboutus_body_right {
+    margin: 0 auto;
+    -webkit-transform: skewY(5deg);
+            transform: skewY(5deg);
+  }
 }
 .aboutus .aboutus_content .aboutus_body .aboutus_body_right p {
   font-size: clamp(1px,1.7361111111vw,25px);
@@ -609,6 +759,33 @@
   font-weight: bold;
   margin: 0;
   margin-top: 40vw;
+}
+@media (max-width: 1000px) {
+  .aboutus .aboutus_content .aboutus_body .aboutus_body_right p {
+    font-size: clamp(1px,2.6666666667vw,20px);
+    color: white;
+    font-family: "NotoSansCJKjp";
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0;
+    margin-top: 12.667vw;
+  }
+}
+.aboutus .aboutus_content .aboutus_body .s_aboutus_btn {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 4vw;
+  border: 1px solid white;
+  -webkit-transform: skewY(5deg);
+          transform: skewY(5deg);
+  margin: 0 auto;
+  display: none;
+}
+@media (max-width: 1000px) {
+  .aboutus .aboutus_content .aboutus_body .s_aboutus_btn {
+    display: block;
+    margin-top: 16.667vw;
+    margin-bottom: 12.667vw;
+  }
 }
 
 .recruit {
