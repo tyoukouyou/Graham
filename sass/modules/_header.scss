@@ -12,22 +12,24 @@ $theme_color: #234670;
 }
 
 header {
+    width: 100%;
     background-color: $background_color;
     display: flex;
     flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
 
     @media (max-width: 1000px) {
         flex-direction: column;
     }
 
     .header_imgbox {
-        width: 100%;
+        width: auto ;
         height: 80px;
         display: flex;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 100;
+       
 
         @media (max-width: 1000px) {
             flex-direction: row;
@@ -111,7 +113,6 @@ header {
                 }
 
                 a {
-                    display: block;
                     color: $font_color1;
                     text-align: center;
                     margin: 0 auto;

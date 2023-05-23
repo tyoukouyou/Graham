@@ -4,6 +4,7 @@
 }
 
 header {
+  width: 100%;
   background-color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,6 +13,10 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 @media (max-width: 1000px) {
   header {
@@ -22,15 +27,11 @@ header {
   }
 }
 header .header_imgbox {
-  width: 100%;
+  width: auto;
   height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
 }
 @media (max-width: 1000px) {
   header .header_imgbox {
@@ -142,7 +143,6 @@ header .header_nav .item_ul li:hover, header .header_nav .item_ul li:hover *, he
   }
 }
 header .header_nav .item_ul li a {
-  display: block;
   color: #333333;
   text-align: center;
   margin: 0 auto;
