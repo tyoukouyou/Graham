@@ -795,6 +795,15 @@
           box-sizing: border-box;
   position: relative;
 }
+@media (max-width: 1000px) {
+  .recruit {
+    padding-top: 0;
+    padding-bottom: 23.467vw;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+  }
+}
 .recruit .recruit_top {
   width: 64.444vw;
   margin: 0 auto;
@@ -812,14 +821,48 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 1000px) {
+  .recruit .recruit_top {
+    width: 80.8vw;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 .recruit .recruit_top .recruit_line {
   width: 14.931vw;
   height: 1px;
   background-color: #D89F1C;
 }
+@media (max-width: 1000px) {
+  .recruit .recruit_top .recruit_line {
+    width: 8vw;
+    height: 1px;
+    background-color: #D89F1C;
+  }
+}
 .recruit .recruit_top h2 {
   color: #D89F1C;
   margin: 0 2.778vw;
+  font-size: clamp(1px,2.0833333333vw,30px);
+}
+@media (max-width: 1000px) {
+  .recruit .recruit_top h2 {
+    font-size: clamp(1px,4vw,30px);
+    color: #D89F1C;
+    margin: 0 3.333vw;
+  }
 }
 .recruit .recruit_right {
   height: 48.264vw;
@@ -844,6 +887,24 @@
           align-items: flex-start;
   justify-items: space-between;
 }
+@media (max-width: 1000px) {
+  .recruit .recruit_title {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 17.333vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+    justify-items: normal;
+  }
+}
 .recruit .recruit_title .recruit_title_de {
   width: 50%;
   display: -webkit-box;
@@ -860,12 +921,42 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 1000px) {
+  .recruit .recruit_title .recruit_title_de {
+    width: auto;
+    margin-left: 4vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+  }
+}
 .recruit .recruit_title .recruit_title_de h1 {
   color: #D89F1C;
+}
+@media (max-width: 1000px) {
+  .recruit .recruit_title .recruit_title_de h1 {
+    font-size: clamp(1px,13.3333333333vw,100px);
+  }
 }
 .recruit .recruit_title .recruit_title_de h2 {
   color: #D89F1C;
   margin-top: 2.083vw;
+}
+@media (max-width: 1000px) {
+  .recruit .recruit_title .recruit_title_de h2 {
+    font-size: clamp(1px,4vw,30px);
+    margin-top: 4vw;
+  }
 }
 .recruit .recruit_title .recruit_title_btn {
   display: -webkit-box;
@@ -878,17 +969,105 @@
   margin-left: auto;
   margin-right: 0;
 }
+@media (max-width: 1000px) {
+  .recruit .recruit_title .recruit_title_btn {
+    margin: 0 auto;
+    margin-top: 12.8vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .recruit .recruit_title .recruit_title_btn p {
   font-family: "NotoSansCJKjp";
   font-size: clamp(1px,2.0833333333vw,30px);
   font-weight: bold;
   color: #000000;
 }
+@media (max-width: 1000px) {
+  .recruit .recruit_title .recruit_title_btn p {
+    margin: 0 auto;
+    font-size: clamp(1px,2.6666666667vw,20px);
+  }
+}
 .recruit .recruit_title .recruit_title_btn .recruit_btn {
   border-radius: 2.083vw;
   background-color: #D89F1C;
   margin-top: 7.917vw;
   margin-left: 11.111vw;
+}
+@media (max-width: 1000px) {
+  .recruit .recruit_title .recruit_title_btn .recruit_btn {
+    margin: 0 auto;
+    margin-top: 12.4vw;
+    background-color: #D89F1C;
+    border-radius: 4vw;
+    z-index: 10;
+    width: 34.667vw;
+    height: 8vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .recruit .recruit_title .recruit_title_btn .recruit_btn div {
+    width: 34.667vw;
+    height: 8vw;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative;
+    border-radius: 4vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .recruit .recruit_title .recruit_title_btn .recruit_btn div span {
+    font-family: NotoSansCJKjp;
+    font-size: clamp(1px,2.1333333333vw,16px);
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+  .recruit .recruit_title .recruit_title_btn .recruit_btn div::after {
+    content: "";
+    position: absolute;
+    right: 1.2em;
+    top: 48%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    width: 3.467vw;
+    height: 2vw;
+    background-image: url(../res/top_arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .recruit .recruit_title .recruit_title_btn .recruit_btn div:hover {
+    opacity: 0.8;
+  }
+  .recruit .recruit_title .recruit_title_btn .recruit_btn div:hover::after {
+    right: 0.5em;
+  }
 }
 .recruit .recruit_imgshow {
   width: 100%;
@@ -908,6 +1087,27 @@
   background-color: #D89F1C;
   margin-top: 5.556vw;
   padding-bottom: 15px;
+}
+@media (max-width: 1000px) {
+  .recruit .recruit_imgshow {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 62vw;
+    -webkit-transform: skewY(3deg);
+            transform: skewY(3deg);
+    background-color: #D89F1C;
+    margin-top: 14.667vw;
+    padding-bottom: 2vw;
+  }
 }
 .recruit .recruit_imgshow img {
   position: relative;

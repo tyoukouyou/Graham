@@ -457,13 +457,13 @@
 
             .s_aboutus_btn {
                 @extend %s_home_btn;
-        
+
                 background-color: rgba(0, 0, 0, 0);
                 border-radius: 4vw;
                 border: 1px solid white;
                 transform: skewY(5deg);
-                margin: 0  auto;
-          
+                margin: 0 auto;
+
                 display: none;
 
                 @media (max-width: 1000px) {
@@ -482,6 +482,13 @@
     box-sizing: border-box;
     position: relative;
 
+    @media (max-width: 1000px) {
+        padding-top: 0;
+        padding-bottom: 23.467vw;
+        box-sizing: border-box;
+        position: relative;
+    }
+
     .recruit_top {
         width: 64.444vw;
         margin: 0 auto;
@@ -490,15 +497,37 @@
         align-items: center;
         justify-content: space-between;
 
+        @media (max-width: 1000px) {
+            width: 80.8vw;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
         .recruit_line {
             width: 14.931vw;
             height: 1px;
             background-color: #D89F1C;
+
+            @media (max-width: 1000px) {
+                width: 8vw;
+                height: 1px;
+                background-color: #D89F1C;
+            }
         }
 
         h2 {
             color: #D89F1C;
             margin: 0 2.778vw;
+            font-size: font-adapter(30);
+
+            @media (max-width: 1000px) {
+                font-size: sfont-adapter(30);
+                color: #D89F1C;
+                margin: 0 3.333vw;
+            }
         }
     }
 
@@ -519,6 +548,16 @@
         align-items: flex-start;
         justify-items: space-between;
 
+        @media (max-width: 1000px) {
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 17.333vw;
+            display: flex;
+            flex-direction: column;
+            align-items: normal;
+            justify-items: normal;
+        }
+
         .recruit_title_de {
             width: 50%;
             display: flex;
@@ -526,15 +565,33 @@
             align-items: flex-start;
             justify-content: space-between;
 
+            @media (max-width: 1000px) {
+                width: auto;
+                margin-left: 4vw;
+                display: flex;
+                flex-direction: column;
+                align-items: normal;
+                justify-content: normal;
+            }
+
             h1 {
                 @extend %home_h1;
                 color: $font_color3;
+
+                @media (max-width: 1000px) {
+                    font-size: sfont-adapter(100);
+                }
             }
 
             h2 {
                 @extend %home_h2;
                 color: $font_color3;
                 margin-top: 2.083vw;
+
+                @media (max-width: 1000px) {
+                    font-size: sfont-adapter(30);
+                    margin-top: 4vw;
+                }
             }
         }
 
@@ -544,11 +601,23 @@
             margin-left: auto;
             margin-right: 0;
 
+            @media (max-width: 1000px) {
+                margin: 0 auto;
+                margin-top: 12.8vw;
+                display: flex;
+                flex-direction: column;
+            }
+
             p {
                 font-family: 'NotoSansCJKjp';
                 font-size: font-adapter(30);
                 font-weight: bold;
                 color: $font_color5;
+
+                @media (max-width: 1000px) {
+                    margin: 0 auto;
+                    font-size: sfont-adapter(20);
+                }
             }
 
             .recruit_btn {
@@ -557,6 +626,62 @@
                 background-color: $button_color;
                 margin-top: 7.917vw;
                 margin-left: 11.111vw;
+
+                @media (max-width: 1000px) {
+                    margin: 0 auto;
+                    margin-top: 12.4vw;
+                    background-color: $button_color;
+                    border-radius: 4vw;
+                    z-index: 10;
+                    width: 34.667vw;
+                    height: 8vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    div {
+                        width: 34.667vw;
+                        height: 8vw;
+                        transition: all 0.3s;
+                        position: relative;
+                        border-radius: 4vw;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        text-align: center;
+                        justify-content: center;
+
+                        span {
+                            font-family: NotoSansCJKjp;
+                            font-size: sfont-adapter(16);
+                            font-weight: bold;
+                            color: $font_color4;
+                        }
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            right: 1.2em;
+                            top: 48%;
+                            -webkit-transform: translate(0, -50%);
+                            transform: translate(0, -50%);
+                            width: 3.467vw;
+                            height: 2vw;
+                            background-image: url(../res/top_arrow.png);
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            transition: 0.5s;
+                        }
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
+
+                        &:hover::after {
+                            right: 0.5em;
+                        }
+                    }
+                }
             }
         }
     }
@@ -571,6 +696,17 @@
         background-color: $button_color;
         margin-top: 5.556vw;
         padding-bottom: 15px;
+        @media (max-width: 1000px) {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 62vw;
+            transform: skewY(3deg);
+            background-color: $button_color;
+            margin-top: 14.667vw;
+            padding-bottom: 2vw;
+        }
 
         img {
             position: relative;
