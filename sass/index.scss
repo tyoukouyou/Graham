@@ -490,7 +490,7 @@
     }
 
     .recruit_top {
-        width: 64.444vw;
+        width: 66vw;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
@@ -1038,108 +1038,99 @@
                             display: none;
                         }
 
-                        div {
-                            &::after {
-                                -webkit-transform: translate(150%, -50%);
-                                transform: translate(150%, -50%);
+                        // div {
+                        //     &::after {
+                        //         -webkit-transform: translate(0%, -50%);
+                        //         transform: translate(0%, -50%);
+                        //     }
+                        // }
+                    }
 
-                                @media (max-width: 1000px) {
-                                    -webkit-transform: translate(150%, -50%);
-                                    transform: translate(150%, -50%);
-                                }
+
+                }
+
+                .services_btn_02_m {
+                    @extend %home_btn;
+                    display: none;
+
+                    @media (max-width: 1000px) {
+                        float: none;
+                        margin: 0 auto;
+                        margin-top: 8.667vw;
+                        background-color: $theme_color;
+                        border-radius: 4vw;
+                        z-index: 10;
+                        width: 40vw;
+                        height: 8vw;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        div {
+                            width: 34.667vw;
+                            height: 8vw;
+                            transition: all 0.3s;
+                            position: relative;
+                            border-radius: 4vw;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            text-align: center;
+                            justify-content: center;
+
+                            span {
+                                font-family: NotoSansCJKjp;
+                                font-size: sfont-adapter(16);
+                                font-weight: bold;
+                                color: $font_color4;
+                            }
+
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                right: 1.2em;
+                                top: 48%;
+                                -webkit-transform: translate(0, -50%);
+                                transform: translate(0, -50%);
+                                width: 3.467vw;
+                                height: 2vw;
+                                background-image: url(../res/top_arrow.png);
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                transition: 0.5s;
+                            }
+
+                            &:hover {
+                                opacity: 0.8;
+                            }
+
+                            &:hover::after {
+                                right: 0.5em;
                             }
                         }
                     }
 
-                    .services_btn_02_m {
-                        @extend %home_btn;
-                        display: none;
-
-                        @media (max-width: 1000px) {
-                            float: none;
-                            margin: 0 auto;
-                            margin-top: 8.667vw;
-                            background-color: $theme_color;
-                            border-radius: 4vw;
-                            z-index: 10;
-                            width: 40vw;
-                            height: 8vw;
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-
-                            div {
-                                width: 34.667vw;
-                                height: 8vw;
-                                transition: all 0.3s;
-                                position: relative;
-                                border-radius: 4vw;
-                                display: flex;
-                                flex-direction: row;
-                                align-items: center;
-                                text-align: center;
-                                justify-content: center;
-
-                                span {
-                                    font-family: NotoSansCJKjp;
-                                    font-size: sfont-adapter(16);
-                                    font-weight: bold;
-                                    color: $font_color4;
-                                }
-
-                                &::after {
-                                    content: "";
-                                    position: absolute;
-                                    right: 1.2em;
-                                    top: 48%;
-                                    -webkit-transform: translate(0, -50%);
-                                    transform: translate(0, -50%);
-                                    width: 3.467vw;
-                                    height: 2vw;
-                                    background-image: url(../res/top_arrow.png);
-                                    background-size: contain;
-                                    background-repeat: no-repeat;
-                                    transition: 0.5s;
-                                }
-
-                                &:hover {
-                                    opacity: 0.8;
-                                }
-
-                                &:hover::after {
-                                    right: 0.5em;
-                                }
-                            }
-                        }
-
-                        div {
-                            &::after {
-                                -webkit-transform: translate(150%, -50%);
-                                transform: translate(150%, -50%);
-
-                                @media (max-width: 1000px) {
-                                    -webkit-transform: translate(150%, -50%);
-                                    transform: translate(150%, -50%);
-                                }
-                            }
-                        }
+                    div {
+                        -webkit-transform: translate(150%, -50%);
+                        transform: translate(150%, -50%);
                     }
                 }
             }
         }
     }
+}
 
-    .services_bottom {
-        margin-top: 5.208vw;
-        width: 100%;
-        height: 2.778vw;
-        background-color: $theme_color;
-        transform: skewY(5deg);
+.services_bottom {
+    margin-top: 5.208vw;
+    width: 100%;
+    height: 2.778vw;
+    background-color: $theme_color;
+    transform: skewY(5deg);
 
-        @media (max-width: 1000px) {
-            height: 7.333vw;
-        }
+    @media (max-width: 1000px) {
+        height: 7.333vw;
     }
+}
 }
 
 .news {
@@ -1162,6 +1153,7 @@
         flex-direction: column;
         align-items: flex-start;
         margin-top: 6.5vw;
+
         @media (max-width: 1000px) {
             width: 87.733vw;
             margin: 0 auto;
@@ -1180,6 +1172,7 @@
         h1 {
             @extend %home_h1;
             color: $font_color5;
+
             @media (max-width: 1000px) {
                 font-size: sfont-adapter(100);
             }
@@ -1190,6 +1183,7 @@
             color: $font_color5;
             margin-top: 2.083vw;
             margin-bottom: 5.208vw;
+
             @media (max-width: 1000px) {
                 font-size: sfont-adapter(30);
                 margin-top: 3.333vw;
@@ -1205,6 +1199,7 @@
             padding-top: 1.875vw;
             padding-bottom: 1.875vw;
             font-weight: normal;
+
             @media (max-width: 1000px) {
                 font-size: sfont-adapter(16);
                 padding-top: 4vw;
@@ -1215,6 +1210,7 @@
                 font-weight: bold;
                 display: block;
                 margin-bottom: 0.1vw;
+
                 @media (max-width: 1000px) {
                     font-size: sfont-adapter(16);
                     margin-bottom: 0.5vw;
@@ -1229,13 +1225,61 @@
             margin-top: 4.167vw;
             margin-right: 0;
             margin-left: auto;
+
             @media (max-width: 1000px) {
-                width: 34.667vw;
-                height: 8vw;
                 margin: 0 auto;
                 margin-top: 8.667vw;
-                
-                border-radius: 4.333vw;
+                background-color: $button_color3;
+                border-radius: 4vw;
+                z-index: 10;
+                width: 34.667vw;
+                height: 8vw;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                div {
+                    width: 34.667vw;
+                    height: 8vw;
+                    transition: all 0.3s;
+                    position: relative;
+                    border-radius: 4vw;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+
+                    span {
+                        font-family: NotoSansCJKjp;
+                        font-size: sfont-adapter(16);
+                        font-weight: bold;
+                        color: $font_color4;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        right: 1.2em;
+                        top: 48%;
+                        -webkit-transform: translate(0, -50%);
+                        transform: translate(0, -50%);
+                        width: 3.467vw;
+                        height: 2vw;
+                        background-image: url(../res/top_arrow.png);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        transition: 0.5s;
+                    }
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+
+                    &:hover::after {
+                        right: 0.5em;
+                    }
+                }
             }
         }
 
