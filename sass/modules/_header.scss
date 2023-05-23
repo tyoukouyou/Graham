@@ -101,7 +101,9 @@ header {
                 &:hover,
                 &:hover *,
                 &.active,
-                &.active * {
+                &.active a,
+                &.active a span,
+                &.active a p {
                     color: $font_color2;
                 }
 

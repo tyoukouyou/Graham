@@ -128,7 +128,7 @@ header .header_nav .item_ul li {
       -ms-flex-align: center;
           align-items: center;
 }
-header .header_nav .item_ul li:hover, header .header_nav .item_ul li:hover *, header .header_nav .item_ul li.active, header .header_nav .item_ul li.active * {
+header .header_nav .item_ul li:hover, header .header_nav .item_ul li:hover *, header .header_nav .item_ul li.active, header .header_nav .item_ul li.active a, header .header_nav .item_ul li.active a span, header .header_nav .item_ul li.active a p {
   color: #A2453A;
 }
 @media (max-width: 1000px) {
