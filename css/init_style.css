@@ -57,3 +57,10 @@ p {
 .anchor {
     display: inline;
 }
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
