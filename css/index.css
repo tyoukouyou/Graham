@@ -86,7 +86,7 @@
             transform: translateY(12px) scale(0.7);
   }
 }
-.news .news_content .news_btn, .services .services_content .services_body .services_body_center .services_btn_02_m, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_02_pc, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_01, .recruit .recruit_title .recruit_title_btn .recruit_btn, .aboutus .aboutus_content .aboutus_body .aboutus_body_left .aboutus_btn, .top .top_content .top_btn {
+.news .news_content .news_btn, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_02_pc, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_01, .recruit .recruit_title .recruit_title_btn .recruit_btn, .aboutus .aboutus_content .aboutus_body .aboutus_body_left .aboutus_btn, .top .top_content .top_btn {
   width: 18.056vw;
   height: 4.167vw;
   display: -webkit-box;
@@ -99,7 +99,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.news .news_content .news_btn div, .services .services_content .services_body .services_body_center .services_btn_02_m div, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_02_pc div, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_01 div, .recruit .recruit_title .recruit_title_btn .recruit_btn div, .aboutus .aboutus_content .aboutus_body .aboutus_body_left .aboutus_btn div, .top .top_content .top_btn div {
+.news .news_content .news_btn div, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_02_pc div, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_01 div, .recruit .recruit_title .recruit_title_btn .recruit_btn div, .aboutus .aboutus_content .aboutus_body .aboutus_body_left .aboutus_btn div, .top .top_content .top_btn div {
   width: 100%;
   height: 100%;
   -webkit-transition: all 0.3s;
@@ -121,13 +121,13 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.news .news_content .news_btn div span, .services .services_content .services_body .services_body_center .services_btn_02_m div span, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_02_pc div span, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_01 div span, .recruit .recruit_title .recruit_title_btn .recruit_btn div span, .aboutus .aboutus_content .aboutus_body .aboutus_body_left .aboutus_btn div span, .top .top_content .top_btn div span {
+.news .news_content .news_btn div span, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_02_pc div span, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_01 div span, .recruit .recruit_title .recruit_title_btn .recruit_btn div span, .aboutus .aboutus_content .aboutus_body .aboutus_body_left .aboutus_btn div span, .top .top_content .top_btn div span {
   font-family: NotoSansCJKjp;
   font-size: clamp(1px,1.1111111111vw,16px);
   font-weight: bold;
   color: #FFFFFF;
 }
-.news .news_content .news_btn div::after, .services .services_content .services_body .services_body_center .services_btn_02_m div::after, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_02_pc div::after, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_01 div::after, .recruit .recruit_title .recruit_title_btn .recruit_btn div::after, .aboutus .aboutus_content .aboutus_body .aboutus_body_left .aboutus_btn div::after, .top .top_content .top_btn div::after {
+.news .news_content .news_btn div::after, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_02_pc div::after, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_01 div::after, .recruit .recruit_title .recruit_title_btn .recruit_btn div::after, .aboutus .aboutus_content .aboutus_body .aboutus_body_left .aboutus_btn div::after, .top .top_content .top_btn div::after {
   content: "";
   position: absolute;
   right: 1.2em;
@@ -142,10 +142,10 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.news .news_content .news_btn div:hover, .services .services_content .services_body .services_body_center .services_btn_02_m div:hover, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_02_pc div:hover, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_01 div:hover, .recruit .recruit_title .recruit_title_btn .recruit_btn div:hover, .aboutus .aboutus_content .aboutus_body .aboutus_body_left .aboutus_btn div:hover, .top .top_content .top_btn div:hover {
+.news .news_content .news_btn div:hover, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_02_pc div:hover, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_01 div:hover, .recruit .recruit_title .recruit_title_btn .recruit_btn div:hover, .aboutus .aboutus_content .aboutus_body .aboutus_body_left .aboutus_btn div:hover, .top .top_content .top_btn div:hover {
   opacity: 0.8;
 }
-.news .news_content .news_btn div:hover::after, .services .services_content .services_body .services_body_center .services_btn_02_m div:hover::after, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_02_pc div:hover::after, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_01 div:hover::after, .recruit .recruit_title .recruit_title_btn .recruit_btn div:hover::after, .aboutus .aboutus_content .aboutus_body .aboutus_body_left .aboutus_btn div:hover::after, .top .top_content .top_btn div:hover::after {
+.news .news_content .news_btn div:hover::after, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_02_pc div:hover::after, .services .services_content .services_body .services_body_center .services_body_center_text .services_btn_01 div:hover::after, .recruit .recruit_title .recruit_title_btn .recruit_btn div:hover::after, .aboutus .aboutus_content .aboutus_body .aboutus_body_left .aboutus_btn div:hover::after, .top .top_content .top_btn div:hover::after {
   right: 0.5em;
 }
 
@@ -643,7 +643,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background: url(../res/s_aboutus_body_bg.png) no-repeat center center;
+    background: url(../res/s_aboutus_body_bg.png) no-repeat center;
+    background-size: cover;
   }
 }
 .aboutus .aboutus_content .aboutus_body .video_container {
@@ -1495,7 +1496,6 @@
 }
 @media (max-width: 1000px) {
   .services .services_content .services_body .services_body_center .services_btn_02_m {
-    float: none;
     margin: 0 auto;
     margin-top: 8.667vw;
     background-color: #234670;
@@ -1514,8 +1514,8 @@
             justify-content: space-between;
   }
   .services .services_content .services_body .services_body_center .services_btn_02_m div {
-    width: 34.667vw;
-    height: 8vw;
+    width: 100%;
+    height: 100%;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     position: relative;
@@ -1563,12 +1563,7 @@
     right: 0.5em;
   }
 }
-.services .services_content .services_body .services_body_center .services_btn_02_m div {
-  -webkit-transform: translate(150%, -50%);
-  transform: translate(150%, -50%);
-}
-
-.services_bottom {
+.services .services_bottom {
   margin-top: 5.208vw;
   width: 100%;
   height: 2.778vw;
@@ -1577,7 +1572,7 @@
           transform: skewY(5deg);
 }
 @media (max-width: 1000px) {
-  .services_bottom {
+  .services .services_bottom {
     height: 7.333vw;
   }
 }

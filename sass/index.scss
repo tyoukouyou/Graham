@@ -336,7 +336,8 @@
                 bottom: 4vw;
                 display: flex;
                 flex-direction: column;
-                background: url(../res/s_aboutus_body_bg.png) no-repeat center center;
+                background: url(../res/s_aboutus_body_bg.png) no-repeat center;
+                background-size: cover;
             }
 
             .video_container {
@@ -1037,24 +1038,15 @@
                         @media (max-width: 1000px) {
                             display: none;
                         }
-
-                        // div {
-                        //     &::after {
-                        //         -webkit-transform: translate(0%, -50%);
-                        //         transform: translate(0%, -50%);
-                        //     }
-                        // }
                     }
 
 
                 }
 
                 .services_btn_02_m {
-                    @extend %home_btn;
                     display: none;
 
                     @media (max-width: 1000px) {
-                        float: none;
                         margin: 0 auto;
                         margin-top: 8.667vw;
                         background-color: $theme_color;
@@ -1067,8 +1059,8 @@
                         justify-content: space-between;
 
                         div {
-                            width: 34.667vw;
-                            height: 8vw;
+                            width: 100%;
+                            height: 100%;
                             transition: all 0.3s;
                             position: relative;
                             border-radius: 4vw;
@@ -1110,28 +1102,23 @@
                         }
                     }
 
-                    div {
-                        -webkit-transform: translate(150%, -50%);
-                        transform: translate(150%, -50%);
-                    }
                 }
             }
         }
     }
-}
 
-.services_bottom {
-    margin-top: 5.208vw;
-    width: 100%;
-    height: 2.778vw;
-    background-color: $theme_color;
-    transform: skewY(5deg);
+    .services_bottom {
+        margin-top: 5.208vw;
+        width: 100%;
+        height: 2.778vw;
+        background-color: $theme_color;
+        transform: skewY(5deg);
 
-    @media (max-width: 1000px) {
-        height: 7.333vw;
+        @media (max-width: 1000px) {
+            height: 7.333vw;
+        }
     }
 }
-
 
 .news {
     padding-top: 0;

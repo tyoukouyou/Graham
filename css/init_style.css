@@ -58,9 +58,28 @@ p {
     display: inline;
 }
 
-.hide{
+.hide {
     display: none;
 }
-.show{
+
+.show {
     display: block;
+}
+
+
+/* 添加一个类来禁用页面滚动 */
+.disable-scroll {
+    overflow: hidden;
+}
+
+.close-image {
+    margin-top: 2.667vw;
+    margin-right: 2.667vw;
+}
+
+.centered-image {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }

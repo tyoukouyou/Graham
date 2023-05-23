@@ -1,11 +1,11 @@
 <header>
     <div class="header_imgbox">
-        <img class="header_logo" src="../res/logo.svg" alt="">
-        <img class="header_menu" src="../res/s_menu.svg" alt="">
+        <img id="header_logo" class="header_logo" src="../res/logo.svg" alt="">
+        <img id="header_menu" class="header_menu" src="../res/s_menu.svg" alt="" onclick="showNavBar()">
     </div>
 
 
-    <div class="header_nav">
+    <div class="header_nav" id="header_nav">
         <ul class="item_ul" id="item_ul">
             <li>
                 <a href="index.html" onclick="return loadIndex.call(this)">
