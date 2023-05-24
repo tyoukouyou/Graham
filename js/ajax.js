@@ -24,6 +24,9 @@ footerXHR.send();
 
 // 使用AJAX请求加载index.html文件 封装成一个函数
 function loadIndex() {
+    if(window.innerWidth < 1000){
+        showNavBar()
+    }
     var url = this.getAttribute("href");
     var bodyContainer = document.querySelector("#bodyContainer");
     // 创建一个新的XMLHttpRequest对象
