@@ -80,8 +80,8 @@ p {
 .centered-image {
     position: relative;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 2.667vw;
+    transform: translate(-50%, 0);
 }
 .active{
     color: A2453A;

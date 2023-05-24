@@ -8,10 +8,23 @@
     padding-bottom: 6.667vw;
     box-sizing: border-box;
 
+    @media (max-width: 1000px) {
+        width: 100%;
+        height: 66.667vw;
+        padding-bottom: 0;
+        box-sizing: border-box;
+    }
+
     .news_video_content {
         width: 100%;
         display: flex;
         flex-direction: column;
+
+        @media (max-width: 1000px) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
 
         .news_video_body {
             height: 55.556vw;
@@ -19,8 +32,16 @@
             display: flex;
             flex-direction: row;
 
+            @media (max-width: 1000px) {
+                height: 66.667vw;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+            }
+
             .bg_container {
                 height: 100%;
+
                 img {
                     width: 100%;
                     position: absolute;
@@ -40,11 +61,24 @@
                 width: 50vw;
                 margin-left: 2.778vw;
 
+                @media (max-width: 1000px) {
+                    margin-top: 14.667vw;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 58.933vw;
+                    margin-left: 4vw;
+
+                }
+
                 h1 {
                     @extend %home_h1;
                     width: 50vw;
                     color: $font_color4;
 
+                    @media (max-width: 1000px) {
+                        font-size: sfont-adapter(100);
+                    }
                 }
 
                 h2 {
@@ -52,6 +86,12 @@
                     color: $font_color4;
                     margin-top: 2.083vw;
                     margin-bottom: 2.778vw;
+
+                    @media (max-width: 1000px) {
+                        font-size: sfont-adapter(30);
+                        margin-top: 3vw;
+                        margin-bottom: 0;
+                    }
                 }
 
             }
@@ -66,7 +106,15 @@
     width: 100%;
     height: auto;
     padding-top: 0;
+    box-sizing: border-box;
     position: relative;
+
+    @media (max-width: 1000px) {
+        width: 100%;
+        padding-top: 0;
+        box-sizing: border-box;
+        position: relative;
+    }
 
     .news_right {
         width: 39.931vw;
@@ -84,6 +132,14 @@
         width: 68.403vw;
         margin: 0 auto;
 
+        @media (max-width: 1000px) {
+            display: flex;
+            flex-direction: column;
+            padding-top: 0;
+            margin-top: 21.333vw;
+            align-items: center;
+        }
+
         .news_title {
             width: 25vw;
             height: 4.167vw;
@@ -91,15 +147,29 @@
             @extend %home_title;
             color: $font_color3;
 
+            @media (max-width: 1000px) {
+                width: 100%;
+                height: 5.667vw;
+                margin: 0 auto;
+            }
+
             p {
                 @extend %home_p;
                 color: $font_color3;
+
+                @media (max-width: 1000px) {
+                    font-size: sfont-adapter(30);
+                }
             }
 
             div {
                 @extend %home_underline;
                 width: 15vw;
                 border-bottom: 3px solid $font_color3;
+
+                @media (max-width: 1000px) {
+                    width: 29.333vw;
+                }
             }
         }
 
@@ -110,6 +180,11 @@
             flex-direction: column;
             align-items: center;
 
+            @media (max-width: 1000px) {
+                width: 78.933vw;
+                margin-top: 6.667vw;
+            }
+
             hr {
                 width: 100%;
             }
@@ -119,6 +194,10 @@
                 color: $font_color5;
                 margin-top: 4.167vw;
                 margin-bottom: 4.167vw;
+                @media (max-width: 1000px) {
+                    margin-top: 6vw;
+                    margin-bottom: 6vw;
+                }
 
                 &:hover {
                     opacity: 0.6;
@@ -130,6 +209,9 @@
                 width: 100%;
                 font-size: font-adapter(24);
                 font-weight: bold;
+                @media (max-width: 1000px) {
+                    font-size: sfont-adapter(24);
+                }
             }
 
             h1 {
@@ -138,6 +220,12 @@
                 font-weight: bold;
                 margin-top: 2.083vw;
                 margin-bottom: 1.042vw;
+                @media (max-width: 1000px) {
+                    font-size: sfont-adapter(30);
+                    margin-top: 1.333vw;
+                    margin-bottom: 1vw;
+                    font-weight: 100;
+                }
             }
 
             p {
@@ -145,6 +233,11 @@
                 margin-top: 2.431vw;
                 font-size: font-adapter(16);
                 line-height: 1.5;
+                @media (max-width: 1000px) {
+                    font-size: sfont-adapter(16);
+                    
+                    margin-top: 2.667vw;
+                }
             }
 
         }
@@ -156,6 +249,14 @@
             margin-top: 7.639vw;
             margin-right: -1.736vw;
             margin-left: auto;
+            @media (max-width: 1000px) {
+                width: 34.667vw;
+                height: 8vw;
+                border-radius: 4vw;
+                margin: 0 auto;
+                margin-top: 10.667vw;
+                margin-bottom: 19.467vw;
+            }
         }
     }
 

@@ -7,17 +7,34 @@
     height: 100vh;
     padding-bottom: 6.667vw;
     box-sizing: border-box;
+    @media (max-width: 1000px) {
+        width: 100%;
+        height: 66.667vw;
+        padding-bottom: 0;
+        box-sizing: border-box;
+    }
 
     .company_content {
         width: 100%;
         display: flex;
         flex-direction: column;
+        @media (max-width: 1000px) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
 
         .company_body {
             height: 55.556vw;
             width: 100%;
             display: flex;
             flex-direction: row;
+            @media (max-width: 1000px) {
+                height: 66.667vw;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+            }
 
             .bg_container {
                 height: 100%;
@@ -39,11 +56,23 @@
                 align-items: flex-start;
                 width: 50vw;
                 margin-left: 2.778vw;
+                @media (max-width: 1000px) {
+                    margin-top: 14.667vw;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 58.933vw;
+                    margin-left: 4vw;
+
+                }
 
                 h1 {
                     @extend %home_h1;
                     width: 50vw;
                     color: $font_color4;
+                    @media (max-width: 1000px) {
+                        font-size: sfont-adapter(100);
+                    }
 
                 }
 
@@ -52,6 +81,11 @@
                     color: $font_color4;
                     margin-top: 2.083vw;
                     margin-bottom: 2.778vw;
+                    @media (max-width: 1000px) {
+                        font-size: sfont-adapter(30);
+                        margin-top: 3vw;
+                        margin-bottom: 0;
+                    }
                 }
 
             }
@@ -68,6 +102,13 @@
     padding-bottom: 7.917vw;
     box-sizing: border-box;
     position: relative;
+    @media (max-width: 1000px) {
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 17.867vw;
+        box-sizing: border-box;
+        position: relative;
+    }
 
     .company_form_right {
         width: 39.931vw;
@@ -82,6 +123,12 @@
         flex-direction: column;
         margin-top: 7.292vw;
         align-items: center;
+        @media (max-width: 1000px) {
+            display: flex;
+            flex-direction: column;
+            margin-top: 21.333vw;
+            align-items: center;
+        }
 
         .company_form_title {
             width: 25vw;
@@ -89,31 +136,57 @@
             margin: 0 auto;
             @extend %home_title;
             color: $font_color3;
+            @media (max-width: 1000px) {
+                width: 100%;
+                height: 6.667vw;
+                margin: 0 auto;
+            }
 
             p {
                 @extend %home_p;
                 color: $font_color3;
+                @media (max-width: 1000px) {
+                    font-size: sfont-adapter(30);
+                }
             }
 
             div {
                 @extend %home_underline;
                 width: 15vw;
                 border-bottom: 3px solid $font_color3;
+                @media (max-width: 1000px) {
+                    width: 29.333vw;
+                }
             }
         }
 
         .company_form_content {
             width: 69.444vw;
             margin-top: 7.222vw;
+            @media (max-width: 1000px) {
+                width: 78.933vw;
+                margin-top: 9.333vw;
+            }
             ul{
                 width: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: space-between;
+                @media (max-width: 1000px) {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                }
                 hr{
                     width: 100%;
                     height: 1px;
+                    @media (max-width: 1000px) {
+                        width: 100%;
+                        height: 1px;
+                    }
                 }
                 li{
                     display: flex;
@@ -122,17 +195,32 @@
                     color: $font_color5;
                     padding-top: 2.778vw;
                     padding-bottom: 2.778vw;
+                    @media (max-width: 1000px) {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        color: $font_color5;
+                        padding-top: 2.3vw;
+                        padding-bottom: 2.3vw;
+                    }
                     span{
                         display: inline-block;
                         width: 16.667vw;
                         font-size: font-adapter(30);
                         font-family: "NotoSansCJKjp";
                         font-weight: bold;
+                        @media (max-width: 1000px) {
+                            width: 17.333vw;
+                            font-size: sfont-adapter(18);
+                        }
                     }
                     p{
                         display: inline-block;
                         font-size: font-adapter(30);
                         font-family: "NotoSansCJKjp";
+                        @media (max-width: 1000px) {
+                            font-size: sfont-adapter(18);
+                        }
                     }
                 }
             }
@@ -153,6 +241,11 @@
     position: relative;
     top: 8.75vw;
     border: 0;
+    @media (max-width: 1000px) {
+        top: 8.8vw;
+        width: 100%;
+        height: 66.667vw;
+    }
     iframe {
         width: 100%;
         height: 100%;
@@ -160,5 +253,9 @@
         -webkit-clip-path: polygon(0 0, 100% 24%, 100% 100%, 0 76%);
         clip-path: polygon(0 0, 100% 24%, 100% 100%, 0 76%);
         border: 0;
+        @media (max-width: 1000px) {
+            -webkit-clip-path: polygon(0 0, 100% 13%, 100% 100%, 0 87%);
+            clip-path: polygon(0 0, 100% 13%, 100% 100%, 0 87%);
+        }
     }
 }
