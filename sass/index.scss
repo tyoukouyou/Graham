@@ -12,9 +12,13 @@
     height: 100vh;
     position: relative;
     box-sizing: border-box;
+    padding-top: 80px;
+    padding-bottom: 5.855vh;
+
 
     .top_content {
-        padding-bottom: 70px;
+        width: 100%;
+        height: 100%;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -29,6 +33,7 @@
         .top_top {
             width: 100%;
             position: absolute;
+            top: 0;
             right: 0;
             z-index: -1;
             content: url(../res/top_up.png);
@@ -44,11 +49,10 @@
         }
 
         .top_left {
-            // width: 39.903vw;
             height: 48.264vw;
             position: absolute;
-            top: 12.5vw;
-            left: -1.667vw;
+            top: 23.423423vh;
+            left: -2.083vw;
             z-index: -1;
             content: url(../res/top_left.png);
 
@@ -68,7 +72,7 @@
             font-weight: bold;
             color: $font_color1;
             display: block;
-            margin-top: 15.278vw;
+            margin-top: 26.8vh;
             margin-left: auto;
             margin-right: 4.861vw;
             z-index: 10;
@@ -88,7 +92,7 @@
 
         .top_btn {
             @extend %home_btn;
-            margin-top: 2.778vw;
+            margin-top: 3.6vh;
             margin-left: auto;
             margin-right: 19.375vw;
             background-color: $button_color;
@@ -162,7 +166,7 @@
 
         .top_imgshow {
             width: 75.833vw;
-            margin-top: 6.25vw;
+            margin-top: 8.108vh;
             padding-right: 2.778vw;
             margin-left: auto;
             margin-right: 0;
@@ -196,7 +200,7 @@
 
         .top_right {
             height: 2.326vw;
-            margin-top: 1.389vw;
+            margin-top: 1.8018vh;
             margin-right: 2.083vw;
             margin-left: auto;
             z-index: 10;
@@ -216,7 +220,7 @@
         .top_bottom {
             height: 3.472vw;
             margin: 0 auto;
-            margin-top: 1.042vw;
+            margin-top: 1.35vh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -234,7 +238,7 @@
 }
 
 
-.aboutus {
+.top_aboutus {
     width: 100%;
     padding-bottom: 19.444vw;
     box-sizing: border-box;
@@ -247,7 +251,7 @@
         transform: skewY(-5deg);
     }
 
-    .aboutus_content {
+    .top_aboutus_content {
         display: flex;
         flex-direction: column;
 
@@ -256,7 +260,7 @@
             flex-direction: column;
         }
 
-        .aboutus_top {
+        .top_aboutus_top {
             width: 100%;
             padding-top: 11.111vw;
             padding-bottom: 11.111vw;
@@ -544,12 +548,9 @@
         }
     }
 
-    .recruit_right {
-        height: 48.264vw;
-        position: absolute;
-        right: -5.278vw;
-        top: 6.25vw;
-        z-index: -1;
+    .top_recruit_ideas_bg_right {
+        @extend %bg_right;
+        top: 5.556vw;
     }
 
     .recruit_title {
@@ -776,11 +777,8 @@
             }
 
             .services_top_title {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                height: 100%;
+                @extend %home_title;
+                color: $theme_color;
 
                 @media (max-width: 1000px) {
                     display: flex;
@@ -791,7 +789,6 @@
                 }
 
                 p {
-                    @extend %home_p;
                     color: $theme_color;
 
                     @media (max-width: 1000px) {
@@ -800,7 +797,6 @@
                 }
 
                 .services_top_underline {
-                    @extend %home_underline;
                     width: 18vw;
                     border-bottom: 3px solid $theme_color;
 
@@ -831,11 +827,9 @@
                     margin-top: 0;
                 }
 
-                .services_body_top_img {
-                    position: absolute;
-                    top: 3.819vw;
-                    left: 0;
-                    z-index: -1;
+                .services_body_bg_left {
+                    @extend %bg_left;
+                    top: 2.778vw;
 
                     @media (max-width: 1000px) {
                         // position: absolute;
