@@ -112,6 +112,7 @@
     @media (max-width: 1000px) {
         width: 100%;
         padding-top: 0;
+        padding-bottom: 0;
         box-sizing: border-box;
         position: relative;
     }
@@ -149,7 +150,7 @@
 
             @media (max-width: 1000px) {
                 width: 100%;
-                height: 5.667vw;
+                height: 6.667vw;
                 margin: 0 auto;
             }
 
@@ -181,8 +182,9 @@
             align-items: center;
 
             @media (max-width: 1000px) {
-                width: 78.933vw;
-                margin-top: 6.667vw;
+                width: 80vw;
+                margin-top: 9.333vw;
+                padding-top: 0;
             }
 
             hr {
@@ -194,9 +196,10 @@
                 color: $font_color5;
                 margin-top: 4.167vw;
                 margin-bottom: 4.167vw;
+
                 @media (max-width: 1000px) {
-                    margin-top: 6vw;
-                    margin-bottom: 6vw;
+                    margin-top: 8vw;
+                    margin-bottom: 8vw;
                 }
 
                 &:hover {
@@ -209,8 +212,10 @@
                 width: 100%;
                 font-size: font-adapter(24);
                 font-weight: bold;
+
                 @media (max-width: 1000px) {
                     font-size: sfont-adapter(24);
+                    font-weight: normal;
                 }
             }
 
@@ -220,11 +225,11 @@
                 font-weight: bold;
                 margin-top: 2.083vw;
                 margin-bottom: 1.042vw;
+
                 @media (max-width: 1000px) {
                     font-size: sfont-adapter(30);
-                    margin-top: 1.333vw;
-                    margin-bottom: 1vw;
-                    font-weight: 100;
+                    margin-top: 2vw;
+                    font-weight: normal;
                 }
             }
 
@@ -233,10 +238,11 @@
                 margin-top: 2.431vw;
                 font-size: font-adapter(16);
                 line-height: 1.5;
+
                 @media (max-width: 1000px) {
                     font-size: sfont-adapter(16);
-                    
-                    margin-top: 2.667vw;
+
+                    margin-top: 5.333vw;
                 }
             }
 
@@ -249,6 +255,7 @@
             margin-top: 7.639vw;
             margin-right: -1.736vw;
             margin-left: auto;
+
             @media (max-width: 1000px) {
                 width: 34.667vw;
                 height: 8vw;
@@ -256,28 +263,57 @@
                 margin: 0 auto;
                 margin-top: 10.667vw;
                 margin-bottom: 19.467vw;
+                background-color: $button_color3;
+                z-index: 10;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                div {
+                    width: 34.667vw;
+                    height: 8vw;
+                    transition: all 0.3s;
+                    position: relative;
+                    border-radius: 4vw;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+
+                    span {
+                        font-family: NotoSansCJKjp;
+                        font-size: sfont-adapter(16);
+                        font-weight: bold;
+                        color: $font_color4;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        right: 1.2em;
+                        top: 48%;
+                        -webkit-transform: translate(0, -50%);
+                        transform: translate(0, -50%);
+                        width: 3.467vw;
+                        height: 2vw;
+                        background-image: url(../res/top_arrow.png);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        transition: 0.5s;
+                    }
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+
+                    &:hover::after {
+                        right: 0.5em;
+                    }
+                }
             }
         }
     }
 
 
-}
-
-.news_bottom {
-    width: 100%;
-    height: 20.833vw;
-    position: relative;
-
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        -webkit-clip-path: polygon(0% 80%, 0% 100%, 100% 100%);
-        clip-path: polygon(0% 80%, 0% 100%, 100% 100%);
-        background-color: #234670;
-        border: 0;
-    }
 }
