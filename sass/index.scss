@@ -97,8 +97,16 @@
             margin-right: 19.375vw;
             background-color: $button_color;
             border-radius: 2.083vw;
-            z-index: 10;
 
+           
+
+            width: 18.056vw;
+            height: 4.167vw;
+            z-index: 10;
+            div {
+                width: 18.056vw;
+                height: 4.167vw;
+            }
             @media (max-width: 1000px) {
                 display: none;
             }
@@ -365,6 +373,7 @@
                     left: 0;
                     z-index: -1;
                     object-fit: cover;
+
                     @media (max-width: 1000px) {
                         display: none;
                         height: 100%;

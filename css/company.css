@@ -15,24 +15,6 @@
   margin: 0;
 }
 
-.company_form .company_form_container .company_form_title p {
-  font-size: clamp(1px,2.0833333333vw,30px);
-  font-weight: bold;
-  font-family: "NotoSansCJKjp", sans-serif;
-  margin: 0;
-  padding: 20px 0 0;
-  text-align: center;
-}
-
-.company_form .company_form_container .company_form_title div {
-  display: block;
-  height: 1px;
-  margin: 0 auto;
-  margin-top: 20px;
-  width: 15vw;
-  border-bottom: 3px solid #D89F1C;
-}
-
 .company_form .company_form_container .company_form_title {
   margin: 0 auto;
   display: -webkit-box;
@@ -141,13 +123,23 @@
   margin-top: 47.7272vh;
 }
 
+.company_form .company_form_bg_right {
+  width: 39.931vw;
+  height: 48.264vw;
+  background: url(../res/bg_right.png) no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-position: 4.861vw 0px;
+  z-index: -1;
+}
+
 .company_top_img .item_top_img_bg {
   background: url(../res/company_bg.jpg) no-repeat center;
 }
 
 .company_form {
   width: 100%;
-  padding-top: 0;
   padding-bottom: 7.917vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -163,12 +155,8 @@
     position: relative;
   }
 }
-.company_form .company_form_right {
-  width: 39.931vw;
-  position: absolute;
-  top: 0;
-  right: -4.861vw;
-  z-index: -1;
+.company_form .company_form_bg_right {
+  top: -9.028vw;
 }
 .company_form .company_form_container {
   display: -webkit-box;
@@ -178,7 +166,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 7.292vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -198,21 +185,12 @@
             align-items: center;
   }
 }
-.company_form .company_form_container .company_form_title {
-  width: 25vw;
-  height: 4.167vw;
-  margin: 0 auto;
-  color: #D89F1C;
-}
 @media (max-width: 1000px) {
   .company_form .company_form_container .company_form_title {
     width: 100%;
     height: 6.667vw;
     margin: 0 auto;
   }
-}
-.company_form .company_form_container .company_form_title p {
-  color: #D89F1C;
 }
 @media (max-width: 1000px) {
   .company_form .company_form_container .company_form_title p {

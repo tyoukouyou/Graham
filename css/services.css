@@ -15,24 +15,6 @@
   margin: 0;
 }
 
-.services03 .services03_container .services03_title p, .services02 .services02_container .services02_title p, .services01 .services01_container .services01_title p {
-  font-size: clamp(1px,2.0833333333vw,30px);
-  font-weight: bold;
-  font-family: "NotoSansCJKjp", sans-serif;
-  margin: 0;
-  padding: 20px 0 0;
-  text-align: center;
-}
-
-.services03 .services03_container .services03_title div, .services02 .services02_container .services02_title div, .services01 .services01_container .services01_title div {
-  display: block;
-  height: 1px;
-  margin: 0 auto;
-  margin-top: 20px;
-  width: 15vw;
-  border-bottom: 3px solid #D89F1C;
-}
-
 .services03 .services03_container .services03_title, .services02 .services02_container .services02_title, .services01 .services01_container .services01_title {
   margin: 0 auto;
   display: -webkit-box;
@@ -141,14 +123,35 @@
   margin-top: 47.7272vh;
 }
 
+.services03 .services02_bg_right, .services01 .services01_bg_right {
+  width: 39.931vw;
+  height: 48.264vw;
+  background: url(../res/bg_right.png) no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-position: 4.861vw 0px;
+  z-index: -1;
+}
+
+.services02 .services02_bg_right {
+  width: 39.931vw;
+  height: 48.264vw;
+  background: url(../res/bg_left.png) no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: 0.694vw 0px;
+  z-index: -1;
+}
+
 .service_top_img .item_top_img_bg {
   background: url(../res/services_bg.jpg) no-repeat center;
 }
 
 .services01 {
   width: 100%;
-  padding-top: 0;
-  padding-bottom: 125px;
+  padding-bottom: 8.681vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
@@ -163,12 +166,8 @@
     position: relative;
   }
 }
-.services01 .services01_right {
-  width: 39.931vw;
-  position: absolute;
-  top: 0;
-  right: -4.861vw;
-  z-index: -1;
+.services01 .services01_bg_right {
+  top: -9.028vw;
 }
 .services01 .services01_container {
   display: -webkit-box;
@@ -178,7 +177,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 9.375vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -199,21 +197,12 @@
             align-items: center;
   }
 }
-.services01 .services01_container .services01_title {
-  width: 25vw;
-  height: 4.167vw;
-  margin: 0 auto;
-  color: #D89F1C;
-}
 @media (max-width: 1000px) {
   .services01 .services01_container .services01_title {
     width: 100%;
     height: 6.667vw;
     margin: 0 auto;
   }
-}
-.services01 .services01_container .services01_title p {
-  color: #D89F1C;
 }
 @media (max-width: 1000px) {
   .services01 .services01_container .services01_title p {
@@ -437,12 +426,11 @@
     position: relative;
   }
 }
-.services02 .services02_right {
-  width: 39.931vw;
-  position: absolute;
+.services02 .services02_bg_right {
   top: 0;
-  right: -4.861vw;
-  z-index: -1;
+  right: 0;
+  left: auto;
+  background-position: 4.861vw 0px;
 }
 .services02 .services02_container {
   display: -webkit-box;
@@ -474,9 +462,6 @@
   }
 }
 .services02 .services02_container .services02_title {
-  width: 40vw;
-  height: 4.167vw;
-  margin: 0 auto;
   color: #234670;
 }
 @media (max-width: 1000px) {
@@ -708,13 +693,6 @@
     position: relative;
   }
 }
-.services03 .services03_right {
-  width: 39.931vw;
-  position: absolute;
-  top: 0;
-  right: -4.861vw;
-  z-index: -1;
-}
 .services03 .services03_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -744,21 +722,12 @@
             align-items: center;
   }
 }
-.services03 .services03_container .services03_title {
-  width: 25vw;
-  height: 4.167vw;
-  margin: 0 auto;
-  color: #D89F1C;
-}
 @media (max-width: 1000px) {
   .services03 .services03_container .services03_title {
     width: 100%;
     height: 6.667vw;
     margin: 0 auto;
   }
-}
-.services03 .services03_container .services03_title p {
-  color: #D89F1C;
 }
 @media (max-width: 1000px) {
   .services03 .services03_container .services03_title p {

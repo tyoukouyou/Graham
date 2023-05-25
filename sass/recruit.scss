@@ -10,41 +10,29 @@
 }
 
 .recruit_purpose {
-    margin-top: 6.667vw;
     width: 100%;
     padding-top: 0;
-    padding-bottom: 125px;
+    padding-bottom: 8.681vw;
     box-sizing: border-box;
     position: relative;
 
-    .recruit_purpose_right {
-        width: 39.931vw;
-        position: absolute;
-        top: 0;
-        right: -4.861vw;
-        z-index: -1;
-
+    .recruit_purpose_bg_right {
+        @extend %bg_right;
+        top: -9.028vw;
     }
 
     .recruit_purpose_container {
         display: flex;
         flex-direction: column;
-        padding-top: 9.375vw;
 
         .recruit_purpose_title {
-            width: 25vw;
-            height: 4.167vw;
-            margin: 0 auto;
             @extend %home_title;
-            color: $font_color3;
 
             p {
-                @extend %home_p;
                 color: $font_color3;
             }
 
             div {
-                @extend %home_underline;
                 width: 15vw;
                 border-bottom: 3px solid $font_color3;
             }
@@ -89,13 +77,8 @@
     box-sizing: border-box;
     position: relative;
 
-    .recruit_value_left {
-        width: 39.931vw;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-
+    .represents_ideas_bg_left {
+        @extend %bg_left;
     }
 
     .recruit_value_container {
@@ -107,18 +90,14 @@
         margin: 0 auto;
 
         .recruit_value_title {
-            width: 14.931vw;
-            height: 4.167vw;
-            margin: 0 auto;
             @extend %home_title;
             color: $theme_color;
 
             p {
-                @extend %home_p;
+                color: $theme_color;
             }
 
             div {
-                @extend %home_underline;
                 width: 14.931vw;
                 border-bottom: 3px solid $theme_color;
             }
@@ -166,13 +145,8 @@
     box-sizing: border-box;
     position: relative;
 
-    .recruit_data_right {
-        width: 39.931vw;
-        position: absolute;
-        top: 0;
-        right: -4.861vw;
-        z-index: -1;
-
+    .recruit_data_bg_right {
+        @extend %bg_right;
     }
 
     .recruit_data_container {
@@ -182,19 +156,13 @@
         padding-top: 9.375vw;
 
         .recruit_data_title {
-            width: 25vw;
-            height: 4.167vw;
-            margin: 0 auto;
             @extend %home_title;
-            color: $font_color3;
 
             p {
-                @extend %home_p;
                 color: $font_color3;
             }
 
             div {
-                @extend %home_underline;
                 width: 15vw;
                 border-bottom: 3px solid $font_color3;
             }
@@ -234,13 +202,8 @@
     box-sizing: border-box;
     position: relative;
 
-    .recruit_employee_left {
-        width: 39.931vw;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-
+    .represents_ideas_bg_left {
+        @extend %bg_left;
     }
 
     .recruit_employee_container {
@@ -252,18 +215,14 @@
         margin: 0 auto;
 
         .recruit_employee_title {
-            width: 14.931vw;
-            height: 4.167vw;
-            margin: 0 auto;
             @extend %home_title;
             color: $theme_color;
 
             p {
-                @extend %home_p;
+                color: $theme_color;
             }
 
             div {
-                @extend %home_underline;
                 width: 14.931vw;
                 border-bottom: 3px solid $theme_color;
             }

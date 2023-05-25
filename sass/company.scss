@@ -11,7 +11,6 @@
 
 .company_form {
     width: 100%;
-    padding-top: 0;
     padding-bottom: 7.917vw;
     box-sizing: border-box;
     position: relative;
@@ -23,18 +22,14 @@
         position: relative;
     }
 
-    .company_form_right {
-        width: 39.931vw;
-        position: absolute;
-        top: 0;
-        right: -4.861vw;
-        z-index: -1;
+    .company_form_bg_right {
+        @extend %bg_right;
+        top: -9.028vw;
     }
 
     .company_form_container {
         display: flex;
         flex-direction: column;
-        margin-top: 7.292vw;
         align-items: center;
         @media (max-width: 1000px) {
             display: flex;
@@ -44,11 +39,7 @@
         }
 
         .company_form_title {
-            width: 25vw;
-            height: 4.167vw;
-            margin: 0 auto;
             @extend %home_title;
-            color: $font_color3;
             @media (max-width: 1000px) {
                 width: 100%;
                 height: 6.667vw;
@@ -56,15 +47,12 @@
             }
 
             p {
-                @extend %home_p;
-                color: $font_color3;
                 @media (max-width: 1000px) {
                     font-size: sfont-adapter(30);
                 }
             }
 
             div {
-                @extend %home_underline;
                 width: 15vw;
                 border-bottom: 3px solid $font_color3;
                 @media (max-width: 1000px) {
