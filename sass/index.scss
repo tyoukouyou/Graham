@@ -12,9 +12,17 @@
     height: 100vh;
     position: relative;
     box-sizing: border-box;
-    padding-top: 80px;
+    // padding-top: 10.667vw;
     padding-bottom: 5.855vh;
 
+    @media (max-width: 1000px) {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        box-sizing: border-box;
+        padding-top: 10.667vw;
+        padding-bottom: 5.882vh;
+    }
 
     .top_content {
         width: 100%;
@@ -24,9 +32,11 @@
         flex-direction: column;
 
         @media (max-width: 1000px) {
-            padding-top: 10.667vw;
-            padding-bottom: 8vw;
             width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
             justify-content: space-between;
         }
 
@@ -41,7 +51,7 @@
             @media (max-width: 1000px) {
                 width: 100%;
                 position: absolute;
-                top: 10.667vw;
+                top: 0;
                 right: 0;
                 z-index: -1;
                 content: url(../res/s_top_up.png);
@@ -59,8 +69,8 @@
             @media (max-width: 1000px) {
                 width: 101.867vw;
                 height: auto;
-                left: -17.733vw;
-                top: 19.333vw;
+                left: -12vw;
+                top: 6.86vh;
                 content: url(../res/s_top_left.png);
             }
         }
@@ -82,7 +92,7 @@
                 font-size: sfont-adapter(24);
                 margin: 0 auto;
                 text-align: center;
-                margin-top: 50vw;
+                margin-top: 36.764vh;
             }
 
             span {
@@ -97,16 +107,15 @@
             margin-right: 19.375vw;
             background-color: $button_color;
             border-radius: 2.083vw;
-
-           
-
             width: 18.056vw;
             height: 4.167vw;
             z-index: 10;
+
             div {
                 width: 18.056vw;
                 height: 4.167vw;
             }
+
             @media (max-width: 1000px) {
                 display: none;
             }
@@ -117,7 +126,7 @@
 
             @media (max-width: 1000px) {
                 margin: 0 auto;
-                margin-top: 4vw;
+                margin-top: 2.94vh;
                 background-color: $button_color;
                 border-radius: 4vw;
                 z-index: 10;
@@ -344,8 +353,8 @@
                 position: relative;
                 display: flex;
                 flex-direction: column;
-                background: url(../res/s_aboutus_body_bg.png) no-repeat center;
-                background-size: cover;
+                // background: url(../res/s_aboutus_body_bg.png) no-repeat center;
+                // background-size: cover;
             }
 
             .video_container {
@@ -361,7 +370,7 @@
 
                 @media (max-width: 1000px) {
                     // height: 100%;
-                    display: none;
+                    // display: none;
                 }
 
                 video {
@@ -375,12 +384,14 @@
                     object-fit: cover;
 
                     @media (max-width: 1000px) {
-                        display: none;
+                        width: 100%;
                         height: 100%;
+                        transform: skewY(5deg);
                         position: absolute;
                         top: 0;
                         left: 0;
                         z-index: -1;
+                        object-fit: cover;
                     }
 
                 }
@@ -448,7 +459,6 @@
 
             .aboutus_body_right {
                 transform: skewY(5deg);
-
                 margin-right: 2.778vw;
                 margin-left: auto;
                 position: relative;
@@ -560,6 +570,12 @@
     .top_recruit_ideas_bg_right {
         @extend %bg_right;
         top: 5.556vw;
+        @media (max-width: 1000px) {
+            width: 76.667vw;
+            height: 92.667vw;
+            background-position: 9.867vw 0px;
+            top: 20vw;
+        }
     }
 
     .recruit_title {
@@ -841,10 +857,10 @@
                     top: 2.778vw;
 
                     @media (max-width: 1000px) {
-                        // position: absolute;
-                        // top: 3.819vw;
-                        // left: 0;
-                        // z-index: -1;
+                        width: 76.667vw;
+                        height: 92.667vw;
+                        background-position: 0px 0px;
+                        top: 10.667vw;
                     }
                 }
 
@@ -885,6 +901,7 @@
                         width: 44vw;
                         margin-right: 0;
                         margin-left: auto;
+                        z-index: -2;
                     }
                 }
             }

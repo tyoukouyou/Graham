@@ -312,8 +312,18 @@
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 80px;
   padding-bottom: 5.855vh;
+}
+@media (max-width: 1000px) {
+  .top {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-top: 10.667vw;
+    padding-bottom: 5.882vh;
+  }
 }
 .top .top_content {
   width: 100%;
@@ -329,9 +339,16 @@
 }
 @media (max-width: 1000px) {
   .top .top_content {
-    padding-top: 10.667vw;
-    padding-bottom: 8vw;
     width: 100%;
+    height: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -349,7 +366,7 @@
   .top .top_content .top_top {
     width: 100%;
     position: absolute;
-    top: 10.667vw;
+    top: 0;
     right: 0;
     z-index: -1;
     content: url(../res/s_top_up.png);
@@ -367,8 +384,8 @@
   .top .top_content .top_left {
     width: 101.867vw;
     height: auto;
-    left: -17.733vw;
-    top: 19.333vw;
+    left: -12vw;
+    top: 6.86vh;
     content: url(../res/s_top_left.png);
   }
 }
@@ -390,7 +407,7 @@
     font-size: clamp(1px,3.2vw,24px);
     margin: 0 auto;
     text-align: center;
-    margin-top: 50vw;
+    margin-top: 36.764vh;
   }
 }
 .top .top_content p span {
@@ -421,7 +438,7 @@
 @media (max-width: 1000px) {
   .top .top_content .s_top_btn {
     margin: 0 auto;
-    margin-top: 4vw;
+    margin-top: 2.94vh;
     background-color: #D89F1C;
     border-radius: 4vw;
     z-index: 10;
@@ -705,8 +722,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background: url(../res/s_aboutus_body_bg.png) no-repeat center;
-    background-size: cover;
   }
 }
 .top_aboutus .top_aboutus_content .aboutus_body .video_container {
@@ -717,11 +732,6 @@
   height: 100%;
   background-image: url(../res/dots.png);
   overflow: hidden;
-}
-@media (max-width: 1000px) {
-  .top_aboutus .top_aboutus_content .aboutus_body .video_container {
-    display: none;
-  }
 }
 .top_aboutus .top_aboutus_content .aboutus_body .video_container video {
   width: 100%;
@@ -737,12 +747,16 @@
 }
 @media (max-width: 1000px) {
   .top_aboutus .top_aboutus_content .aboutus_body .video_container video {
-    display: none;
+    width: 100%;
     height: 100%;
+    -webkit-transform: skewY(5deg);
+            transform: skewY(5deg);
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .top_aboutus .top_aboutus_content .aboutus_body .aboutus_body_left {
@@ -946,6 +960,14 @@
 }
 .recruit .top_recruit_ideas_bg_right {
   top: 5.556vw;
+}
+@media (max-width: 1000px) {
+  .recruit .top_recruit_ideas_bg_right {
+    width: 76.667vw;
+    height: 92.667vw;
+    background-position: 9.867vw 0px;
+    top: 20vw;
+  }
 }
 .recruit .recruit_title {
   width: 91.528vw;
@@ -1329,6 +1351,14 @@
 .services .services_content .services_body .services_body_top .services_body_bg_left {
   top: 2.778vw;
 }
+@media (max-width: 1000px) {
+  .services .services_content .services_body .services_body_top .services_body_bg_left {
+    width: 76.667vw;
+    height: 92.667vw;
+    background-position: 0px 0px;
+    top: 10.667vw;
+  }
+}
 .services .services_content .services_body .services_body_top .services_title {
   margin-top: 7.986vw;
 }
@@ -1365,6 +1395,7 @@
     width: 44vw;
     margin-right: 0;
     margin-left: auto;
+    z-index: -2;
   }
 }
 .services .services_content .services_body .services_body_center .services_body_center_text h1 {
