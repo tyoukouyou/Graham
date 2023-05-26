@@ -58,6 +58,11 @@
     .news_show_bg_right {
         @extend %bg_right;
         top: -9.028vw;
+        @media (max-width: 1000px) {
+            width: 76.667vw;
+            height: 92.667vw;
+            background-position: 11.333vw 0px;
+        }
     }
 
     .news_container {

@@ -58,6 +58,12 @@
     .services01_bg_right{
         @extend %bg_right;
         top: -9.028vw;
+        @media (max-width: 1000px) {
+            top: -13.333vw;
+            width: 76.667vw;
+            height: 92.667vw;
+            background-position: 9.867vw 0px;
+        }
     }
     .services01_container {
         display: flex;
@@ -272,6 +278,12 @@
         right: 0;
         left: auto;    
         background-position: 4.861vw 0px;
+        @media (max-width: 1000px) {
+            width: 76.667vw;
+            height: 92.667vw;
+            background-position: 9.867vw 0px;
+            top: -13.333vw;
+        }
 
     }
 
@@ -485,6 +497,12 @@
 
     .services02_bg_right {
         @extend %bg_right;
+        @media (max-width: 1000px) {
+            top: -13.333vw;
+            width: 76.667vw;
+            height: 92.667vw;
+            background-position: 9.867vw 0px;
+        }
     }
 
     .services03_container {

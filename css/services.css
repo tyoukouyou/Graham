@@ -208,6 +208,14 @@
 .services01 .services01_bg_right {
   top: -9.028vw;
 }
+@media (max-width: 1000px) {
+  .services01 .services01_bg_right {
+    top: -13.333vw;
+    width: 76.667vw;
+    height: 92.667vw;
+    background-position: 9.867vw 0px;
+  }
+}
 .services01 .services01_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -470,6 +478,14 @@
   left: auto;
   background-position: 4.861vw 0px;
 }
+@media (max-width: 1000px) {
+  .services02 .services02_bg_right {
+    width: 76.667vw;
+    height: 92.667vw;
+    background-position: 9.867vw 0px;
+    top: -13.333vw;
+  }
+}
 .services02 .services02_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -729,6 +745,14 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     position: relative;
+  }
+}
+@media (max-width: 1000px) {
+  .services03 .services02_bg_right {
+    top: -13.333vw;
+    width: 76.667vw;
+    height: 92.667vw;
+    background-position: 9.867vw 0px;
   }
 }
 .services03 .services03_container {
