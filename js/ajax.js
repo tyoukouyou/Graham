@@ -34,7 +34,7 @@ footerXHR.send();
 
 // 使用AJAX请求加载index.html文件 封装成一个函数
 function loadIndex() {
-    if(window.innerWidth < 1000){
+    if (window.innerWidth < 1000) {
         showNavBar()
     }
     var url = this.getAttribute("href");
@@ -45,6 +45,29 @@ function loadIndex() {
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             bodyContainer.innerHTML = xhr.responseText; // 将响应内容插入到bodyContainer中
+            const regex = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi;
+            var jsContained = xhr.responseText.match(regex); //ajaxLoadedData为ajax获取到的数据
+            console.log(jsContained);
+            // 第二步：如果包含js，则一段一段的取出js再加载执行
+            if (jsContained) {
+                // 分段取出js正则
+                var regGetJS = /<script(.|\n)*?>((.|\n|\r\n)*)?<\/script>/im;
+                // 按顺序分段执行js
+                var jsNums = jsContained.length;
+                for (var i = 0; i < jsNums; i++) {
+                    var jsSection = jsContained[i].match(regGetJS);
+                    if (jsSection[2]) {
+                        if (window.execScript) {
+                            // 给IE的特殊待遇
+                            window.execScript(jsSection[2]);
+                        } else {
+                            // 给其他大部分浏览器用的
+                            window.eval(jsSection[2]);
+                        }
+                    }
+                }
+            }
+
             window.scrollTo(0, 0); // 滚动到页面顶部
         }
     };
@@ -54,3 +77,4 @@ function loadIndex() {
     return false; // 阻止默认的链接点击行为
 
 }
+

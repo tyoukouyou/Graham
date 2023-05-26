@@ -1,3 +1,4 @@
+console.log("lazy.js");
 if ('loading' in HTMLImageElement.prototype) {
     const images = document.querySelectorAll("img.lazyload");
     images.forEach(img => {
