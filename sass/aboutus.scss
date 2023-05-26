@@ -4,10 +4,12 @@
 
 .abouts_top_img {
     @extend %item_top_img;
-    .item_top_img_bg {
-        background: url(../res/aboutus_bg.jpg) no-repeat center;
+    // img{
     }
-}
+    // .item_top_img_bg {
+    //     background: url(../res/aboutus_bg.jpg) no-repeat center;
+    // }
+// }
 
 .abouts_ideas {
     width: 100%;

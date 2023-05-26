@@ -1,4 +1,3 @@
-
 // 使用AJAX请求加载header.html文件
 var headerXHR = new XMLHttpRequest();
 headerXHR.open('GET', 'modules/header.html', true);
@@ -9,6 +8,17 @@ headerXHR.onreadystatechange = function () {
     }
 };
 headerXHR.send();
+
+// 使用AJAX请求加载top.html文件
+var topXHR = new XMLHttpRequest();
+topXHR.open('GET', 'top.html', true);
+topXHR.onreadystatechange = function () {
+    if (topXHR.readyState === 4 && topXHR.status === 200) {
+        // 将top.html的内容插入到bodyContainer容器中
+        document.getElementById('bodyContainer').innerHTML = topXHR.responseText;
+    }
+};
+topXHR.send();
 
 // 使用AJAX请求加载footer.html文件
 var footerXHR = new XMLHttpRequest();

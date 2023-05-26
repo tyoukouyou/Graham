@@ -4,9 +4,9 @@
 
 .recruit_top_img{
     @extend %item_top_img;
-    .item_top_img_bg{
-        background: url(../res/recruit_bg.jpg) no-repeat center;
-    }
+    // .item_top_img_bg{
+    //     background: url(../res/recruit_bg.jpg) no-repeat center;
+    // }
 }
 
 .recruit_purpose {
