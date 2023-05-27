@@ -4,12 +4,8 @@
 
 .abouts_top_img {
     @extend %item_top_img;
-    // img{
-    }
-    // .item_top_img_bg {
-    //     background: url(../res/aboutus_bg.jpg) no-repeat center;
-    // }
-// }
+
+}
 
 .abouts_ideas {
     width: 100%;
@@ -31,7 +27,7 @@
             @extend %home_title;
         }
 
-        .ideas_content {
+        .abouts_ideas_content {
             width: 91.389vw;
             padding-top: 5.903vw;
             margin-left: 2.778vw;
@@ -57,18 +53,18 @@
 
 }
 
-.represents {
+.abouts_represents {
     width: 100%;
     padding-top: 0;
     padding-bottom: 8.681vw;
     box-sizing: border-box;
     position: relative;
 
-    .represents_ideas_bg_left {
+    .abouts_represents_ideas_bg_left {
         @extend %bg_left;
     }
 
-    .represents_container {
+    .abouts_represents_container {
         width: 66.319vw;
         display: flex;
         flex-direction: column;
@@ -76,16 +72,17 @@
         padding-top: 9.375vw;
         margin: 0 auto;
 
-        .represents_title {
+        .abouts_represents_title {
             @extend %home_title;
             color: $theme_color;
+
             div {
                 width: 14.931vw;
                 border-bottom: 3px solid $theme_color;
             }
         }
 
-        .represents_img {
+        .abouts_represents_img {
             width: 49.653vw;
             margin: 0 auto;
             margin-top: 4.167vw;
@@ -111,18 +108,18 @@
 
 }
 
-.employee {
+.abouts_employee {
     width: 100%;
     padding-top: 0;
     padding-bottom: 10.833vw;
     box-sizing: border-box;
     position: relative;
 
-    .employee_ideas_bg_right {
+    .abouts_employee_ideas_bg_right {
         @extend %bg_right;
     }
 
-    .employee_container {
+    .abouts_employee_container {
         display: flex;
         flex-direction: column;
         width: 75.764vw;
@@ -130,15 +127,16 @@
         padding-top: 9.722vw;
         align-items: center;
 
-        .employee_title {
+        .abouts_employee_title {
             @extend %home_title;
+
             div {
                 width: 15vw;
                 border-bottom: 3px solid $font_color3;
             }
         }
 
-        .employee_list {
+        .abouts_employee_list {
             margin-top: 6.25vw;
             display: flex;
             flex-direction: row;
@@ -146,7 +144,7 @@
             align-items: flex-end;
             width: 100%;
 
-            .employee_item {
+            .abouts_employee_item {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -156,7 +154,7 @@
                     width: 31.25vw;
                 }
 
-                .employee_name {
+                .abouts_employee_name {
                     font-size: font-adapter(24);
                     font-family: "NotoSansCJKjp";
                     font-weight: bold;
@@ -165,7 +163,7 @@
                     margin-bottom: 4.167vw;
                 }
 
-                .employee_btn {
+                .abouts_employee_btn {
                     @extend %home_btn;
                     background-color: $button_color;
                     border-radius: 2.083vw;
@@ -180,18 +178,18 @@
     }
 }
 
-.company {
+.abouts_company {
     width: 100%;
     padding-top: 0;
     padding-bottom: 18.056vw;
     box-sizing: border-box;
     position: relative;
 
-    .company_ideas_bg_left {
+    .abouts_company_ideas_bg_left {
         @extend %bg_left;
     }
 
-    .company_container {
+    .abouts_company_container {
         width: 89.583vw;
         display: flex;
         flex-direction: column;
@@ -199,24 +197,25 @@
         padding-top: 9.375vw;
         margin: 0 auto;
 
-        .company_title {
-         
+        .abouts_company_title {
+
             @extend %home_title;
             color: $theme_color;
+
             div {
                 width: 14.931vw;
                 border-bottom: 3px solid $theme_color;
             }
         }
 
-        .company_list {
+        .abouts_company_list {
             margin: 0 auto;
             margin-top: 4.861vw;
 
             display: flex;
             flex-direction: column;
 
-            .company_imgbox {
+            .abouts_company_imgbox {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -232,7 +231,7 @@
         }
     }
 
-    .company_right {
+    .abouts_company_right {
         height: 2.326vw;
         position: absolute;
         bottom: 10.278vw;

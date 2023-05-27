@@ -24,14 +24,14 @@
                     <img loading="lazy" data-src="./res/top_img_01.jpg" alt="" class="lazyload">
                 </li>
                 <li>
-                    <img loading="lazy" src="./res/top_img_02.jpg" alt="">
+                    <img loading="lazy" data-src="./res/top_img_02.jpg" alt="" class="lazyload">
                 </li>
                 <li>
-                    <img loading="lazy" src="./res/top_img_03.jpg" alt="">
+                    <img loading="lazy" data-src="./res/top_img_03.jpg" alt="" class="lazyload">
                 </li>
             </ul>
         </div>
-        <img loading="lazy" class="top_right" src="./res/top_right.png" alt="">
+        <img loading="lazy" class="top_right lazyload" data-src="./res/top_right.png" alt="">
         <a href="#" class="s_top_btn">
             <div>
                 <span>
@@ -39,7 +39,7 @@
                 </span>
             </div>
         </a>
-        <div class="top_bottom" id="mouse_btn">
+        <div class="top_bottom" id="mouse_btn" onclick="scrollToNextSection()">
             <div class="item">
                 <div class="mouse m-1"></div>
             </div>
@@ -51,25 +51,23 @@
 <section class="top_aboutus">
     <div class="top_aboutus_content">
         <div class="top_aboutus_top">
-
-            <div class="aboutus_top_title">
-                <div class="aboutus_top_text-container">
+            <div class="top_aboutus_top_title">
+                <div class="top_aboutus_top_text_container">
                     <p>幸福体験を届け続ける</p>
-                    <div class="aboutus_top_underline"> </div>
+                    <div class="top_aboutus_top_underline"> </div>
                 </div>
             </div>
         </div>
-        <div class="aboutus_body">
-            <div class="video_container">
+        <div class="top_aboutus_body">
+            <div class="top_video_container">
                 <video autoplay muted loop>
                     <source src="./res/test.mp4" type="video/mp4">
                 </video>
             </div>
-
-            <div class="aboutus_body_left">
+            <div class="top_aboutus_body_left">
                 <h1>ABOUT&nbsp;US</h1>
                 <h2>私たちについて</h2>
-                <a href="#" class="aboutus_btn">
+                <a href="#" class="top_aboutus_btn">
                     <div>
                         <span>
                             私たちについて
@@ -77,14 +75,14 @@
                     </div>
                 </a>
             </div>
-            <div class="aboutus_body_right">
+            <div class="top_aboutus_body_right">
                 <p>
                     「幸福体験を届け続ける」ことをミッションに掲げ、<br />
                     主にコールセンターの運営を行うことで、<br />
                     世の中の課題解決をしていきます。
                 </p>
             </div>
-            <a href="#" class="s_aboutus_btn">
+            <a href="#" class="top_s_aboutus_btn">
                 <div>
                     <span>
                         私たちについて
@@ -92,29 +90,28 @@
                 </div>
             </a>
         </div>
-
     </div>
 </section>
 
 
-<section class="recruit">
-    <div class="recruit_top">
+<section class="top_recruit">
+    <div class="top_recruit_top">
         <div class="recruit_line"></div>
         <h2>成長できる環境をご用意します</h2>
-        <div class="recruit_line"></div>
+        <div class="top_recruit_line"></div>
     </div>
     <div class="top_recruit_ideas_bg_right">
     </div>
-    <div class="recruit_title">
-        <div class="recruit_title_de">
+    <div class="top_recruit_title">
+        <div class="top_recruit_title_de">
             <h1>RECRUIT</h1>
             <h2>採用情報</h2>
         </div>
-        <div class="recruit_title_btn">
+        <div class="top_recruit_title_btn">
             <p>私たちと一緒にビジョンを共感できる、<br />
                 仲間を募集しています。
             </p>
-            <a href="#" class="recruit_btn">
+            <a href="#" class="top_recruit_btn">
                 <div>
                     <span>
                         応募エントリー
@@ -123,44 +120,43 @@
             </a>
         </div>
     </div>
-    <div class="recruit_imgshow">
-        <img loading="lazy" src="./res/recruit_img_01.jpg" alt="">
-        <img loading="lazy" src="./res/recruit_img_02.jpg" alt="">
-        <img loading="lazy" src="./res/recruit_img_03.jpg" alt="">
-        <img loading="lazy" src="./res/recruit_img_04.jpg" alt="">
-        <img loading="lazy" src="./res/recruit_img_05.jpg" alt="">
+    <div class="top_recruit_imgshow">
+        <img loading="lazy" data-src="./res/recruit_img_01.jpg" alt="" class="lazyload">
+        <img loading="lazy" data-src="./res/recruit_img_02.jpg" alt="" class="lazyload">
+        <img loading="lazy" data-src="./res/recruit_img_03.jpg" alt="" class="lazyload">
+        <img loading="lazy" data-src="./res/recruit_img_04.jpg" alt="" class="lazyload">
+        <img loading="lazy" data-src="./res/recruit_img_05.jpg" alt="" class="lazyload">
     </div>
 </section>
 
-<section class="services">
-    <div class="services_content">
-        <div class="services_top">
-            <div class="services_top_title">
+<section class="top_services">
+    <div class="top_services_content">
+        <div class="top_services_top">
+            <div class="top_services_top_title">
                 <p>営業戦略からメンバーのアサイン、<br />
                     実働、マネジメント、マネタイズまで</p>
-                <div class="services_top_underline"> </div>
+                <div class="top_services_top_underline"> </div>
             </div>
         </div>
-        <div class="services_body">
-            <div class="services_body_top">
-                <div class="services_body_bg_left">
+        <div class="top_services_body">
+            <div class="top_services_body_top">
+                <div class="top_services_body_bg_left">
                 </div>
-                <div class="services_title">
+                <div class="top_services_title">
                     <h1>SERVICES</h1>
                     <h2>事業内容</h2>
                 </div>
-                <img loading="lazy" src="./res/services_img_01.jpg" alt="">
+                <img loading="lazy" data-src="./res/services_img_01.jpg" alt="" class="lazyload">
             </div>
-            <div class="services_body_center">
-                <img loading="lazy" class="services_img_pc" src="./res/services_img_02.jpg" alt="">
-                <div class="services_body_center_text">
+            <div class="top_services_body_center">
+                <img loading="lazy" class="top_services_img_pc lazyload" data-src="./res/services_img_02.jpg" alt="">
+                <div class="top_services_body_center_text">
                     <h1>営業代行</h1>
                     <h2>顧客開拓、リスト獲得、受注代行、マネタイズなどを<br />
                         新規ユーザーや既存ユーザー関わらず、対応代行をいたします。<br />
                         また、事業によってはコンサルティングも行い、事業マネタイズもいたします。</h2>
-                    <img loading="lazy" class="services_img_m m_r" src="./res/services_img_02.jpg" alt="">
-
-                    <a href="#" class="services_btn_01">
+                    <img loading="lazy" class="top_services_img_m m_r lazyload" data-src="./res/services_img_02.jpg" alt="">
+                    <a href="#" class="top_services_btn_01">
                         <div>
                             <span>
                                 営業代行 詳細
@@ -169,28 +165,25 @@
                     </a>
                 </div>
             </div>
-            <div class="services_body_center">
-                <div class="services_body_center_text">
+            <div class="top_services_body_center">
+                <div class="top_services_body_center_text">
                     <h1>カスタマーサポート活用支援・導入支援</h1>
                     <h2>既存のカスタマーサポート業務の活用支援及び、新規でカスタマーサポートを<br />
                         設置する際の導入支援をおこなっています。弊社ではCX（顧客体験）に注力<br />
                         した業務を行うことで、LTV（顧客生涯価値）の向上・解約率の低下・アップ<br />
                         セル率・クロスセル率の向上を実現します。
-
                     </h2>
-                    <a href="#" class="services_btn_02_pc">
+                    <a href="#" class="top_services_btn_02_pc">
                         <div>
                             <span>
                                 カスタマーサポート詳細
                             </span>
                         </div>
                     </a>
-
-
                 </div>
-                <img loading="lazy" class="services_img_pc" src="./res/services_img_03.jpg" alt="">
-                <img loading="lazy" class="services_img_m m_r" src="./res/services_img_03.jpg" alt="">
-                <a href="#" class="services_btn_02_m">
+                <img loading="lazy" class="top_services_img_pc lazyload" data-src="./res/services_img_03.jpg" alt="">
+                <img loading="lazy" class="top_services_img_m m_r lazyload" data-src="./res/services_img_03.jpg" alt="">
+                <a href="#" class="top_services_btn_02_m">
                     <div>
                         <span>
                             カスタマーサポート詳細
@@ -198,16 +191,15 @@
                     </div>
                 </a>
             </div>
-            <div class="services_body_center">
-                <img loading="lazy" class="services_img_pc" src="./res/services_img_04.jpg" alt="">
-                <div class="services_body_center_text">
+            <div class="top_services_body_center">
+                <img loading="lazy" class="top_services_img_pc lazyload" data-src="./res/services_img_04.jpg" alt="">
+                <div class="top_services_body_center_text">
                     <h1>人材派遣</h1>
                     <h2>カスタマーサポート業務請負だけでなく、お客様の求めるコスト・知識・接<br />
                         遇のレベルに合致したカスタマーサポート従事者を派遣いたします。一名・<br />
                         短期からまとまった人数・長期まで対応可能です。</h2>
-                    <img loading="lazy" class="services_img_m m_l" src="./res/services_img_04.jpg" alt="">
-
-                    <a href="#" class="services_btn_01">
+                    <img loading="lazy" class="top_services_img_m m_l lazyload" data-src="./res/services_img_04.jpg" alt="">
+                    <a href="#" class="top_services_btn_01">
                         <div>
                             <span>
                                 人材派遣 詳細 </span>
@@ -217,14 +209,12 @@
             </div>
         </div>
     </div>
-    <div class="services_bottom">
-
+    <div class="top_services_bottom">
     </div>
 </section>
 
-<section class="news">
-
-    <div class="news_content">
+<section class="top_news">
+    <div class="top_news_content">
         <h1>NEWS</h1>
         <h2>お知らせ・ニュース</h2>
         <hr>
@@ -258,7 +248,7 @@
             </h3>
         </a>
         <hr>
-        <a href="#" class="news_btn">
+        <a href="#" class="top_news_btn">
             <div>
                 <span>
                     ニュース一覧
@@ -269,11 +259,11 @@
 
 </section>
 
-<div class="news_map">
+<div class="top_news_map">
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2724.3937926851268!2d139.7451639416094!3d35.70485390641526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e72018c21121%3A0x736da0eb57d78744!2z44Kw44Op44OP44Og5qCq5byP5Lya56S-!5e0!3m2!1sja!2sjp!4v1684205132656!5m2!1sja!2sjp"
         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
     </iframe>
 </div>
 
-<script src="./js/lazy.js"></script>
+<script src="./js/public.js" defer></script>

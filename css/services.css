@@ -80,10 +80,10 @@
 }
 .service_top_img .item_top_img_bg img {
   width: 100%;
+  height: 100%;
   position: absolute;
   left: 0;
   z-index: -1;
-  top: -10.417vw;
 }
 .service_top_img .item_top_img_bg .item_top_img_bg_dots {
   width: 100%;

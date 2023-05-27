@@ -1,80 +1,80 @@
-// 使用AJAX请求加载header.html文件
+// Load the header.html file using AJAX request
 var headerXHR = new XMLHttpRequest();
 headerXHR.open('GET', 'modules/header.html', true);
 headerXHR.onreadystatechange = function () {
     if (headerXHR.readyState === 4 && headerXHR.status === 200) {
-        // 将header.html的内容插入到headerContainer容器中
         document.getElementById('headerContainer').innerHTML = headerXHR.responseText;
     }
 };
 headerXHR.send();
 
-// 使用AJAX请求加载top.html文件
+// Load the top.html file using AJAX request
 var topXHR = new XMLHttpRequest();
 topXHR.open('GET', 'top.html', true);
 topXHR.onreadystatechange = function () {
     if (topXHR.readyState === 4 && topXHR.status === 200) {
-        // 将top.html的内容插入到bodyContainer容器中
         document.getElementById('bodyContainer').innerHTML = topXHR.responseText;
+        scripts_get(topXHR.responseText)
     }
 };
 topXHR.send();
 
-// 使用AJAX请求加载footer.html文件
+//Load the footer.html file using AJAX request
 var footerXHR = new XMLHttpRequest();
 footerXHR.open('GET', 'modules/footer.html', true);
 footerXHR.onreadystatechange = function () {
     if (footerXHR.readyState === 4 && footerXHR.status === 200) {
-        // 将footer.html的内容插入到footerContainer容器中
         document.getElementById('footerContainer').innerHTML = footerXHR.responseText;
     }
 };
 footerXHR.send();
 
 
-// 使用AJAX请求加载index.html文件 封装成一个函数
+// Load the requested page using AJAX request
 function loadIndex() {
     if (window.innerWidth < 1000) {
         showNavBar()
     }
     var url = this.getAttribute("href");
     var bodyContainer = document.querySelector("#bodyContainer");
-    // 创建一个新的XMLHttpRequest对象
     var xhr = new XMLHttpRequest();
-    // 处理完成加载的回调函数
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
-            bodyContainer.innerHTML = xhr.responseText; // 将响应内容插入到bodyContainer中
-            const regex = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi;
-            var jsContained = xhr.responseText.match(regex); //ajaxLoadedData为ajax获取到的数据
-            console.log(jsContained);
-            // 第二步：如果包含js，则一段一段的取出js再加载执行
-            if (jsContained) {
-                // 分段取出js正则
-                var regGetJS = /<script(.|\n)*?>((.|\n|\r\n)*)?<\/script>/im;
-                // 按顺序分段执行js
-                var jsNums = jsContained.length;
-                for (var i = 0; i < jsNums; i++) {
-                    var jsSection = jsContained[i].match(regGetJS);
-                    if (jsSection[2]) {
-                        if (window.execScript) {
-                            // 给IE的特殊待遇
-                            window.execScript(jsSection[2]);
-                        } else {
-                            // 给其他大部分浏览器用的
-                            window.eval(jsSection[2]);
-                        }
-                    }
-                }
-            }
-
-            window.scrollTo(0, 0); // 滚动到页面顶部
+            bodyContainer.innerHTML = xhr.responseText; 
+           // Reload the required scripts
+            scripts_get(xhr.responseText)
+            // Scroll to the top of the page
+            window.scrollTo(0, 0); 
         }
     };
-    // 发送GET请求以获取index.html文件
     xhr.open("GET", url, true);
     xhr.send();
-    return false; // 阻止默认的链接点击行为
+    // Block the default link click behavior
+    return false; 
 
 }
 
+// scripts_get(context)function
+function scripts_get(context){
+    // Create a regular expression to match the script tag
+    var regex = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi;
+    // Use regular expressions to find the matching script tag in the html string
+    var jsContained = context.match(regex);
+    if (jsContained) {
+        // Execute the matched script tags
+        for (var i = 0; i < jsContained.length; i++) {
+            var scriptTag = jsContained[i];
+            var tempDiv = document.createElement('div');
+            tempDiv.innerHTML = scriptTag;
+            var scriptElement = tempDiv.querySelector('script');
+            if (scriptElement) {
+                var newScriptElement = document.createElement('script');
+                newScriptElement.src = scriptElement.src;
+                newScriptElement.defer = scriptElement.defer;
+                document.head.appendChild(newScriptElement);
+              }
+
+
+        }
+    }
+}

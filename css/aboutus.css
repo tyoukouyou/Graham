@@ -1,5 +1,5 @@
 @import '../css/init_style.css';
-.employee .employee_container .employee_list .employee_item .employee_btn {
+.abouts_employee .abouts_employee_container .abouts_employee_list .abouts_employee_item .abouts_employee_btn {
   width: 18.056vw;
   height: 4.167vw;
   display: -webkit-box;
@@ -12,7 +12,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.employee .employee_container .employee_list .employee_item .employee_btn div {
+.abouts_employee .abouts_employee_container .abouts_employee_list .abouts_employee_item .abouts_employee_btn div {
   width: 100%;
   height: 100%;
   -webkit-transition: all 0.3s;
@@ -34,13 +34,13 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.employee .employee_container .employee_list .employee_item .employee_btn div span {
+.abouts_employee .abouts_employee_container .abouts_employee_list .abouts_employee_item .abouts_employee_btn div span {
   font-family: NotoSansCJKjp;
   font-size: clamp(1px,1.1111111111vw,16px);
   font-weight: bold;
   color: #FFFFFF;
 }
-.employee .employee_container .employee_list .employee_item .employee_btn div::after {
+.abouts_employee .abouts_employee_container .abouts_employee_list .abouts_employee_item .abouts_employee_btn div::after {
   content: "";
   position: absolute;
   right: 1.2em;
@@ -55,10 +55,10 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.employee .employee_container .employee_list .employee_item .employee_btn div:hover {
+.abouts_employee .abouts_employee_container .abouts_employee_list .abouts_employee_item .abouts_employee_btn div:hover {
   opacity: 0.8;
 }
-.employee .employee_container .employee_list .employee_item .employee_btn div:hover::after {
+.abouts_employee .abouts_employee_container .abouts_employee_list .abouts_employee_item .abouts_employee_btn div:hover::after {
   right: 0.5em;
 }
 
@@ -78,7 +78,7 @@
   margin: 0;
 }
 
-.company .company_container .company_title, .employee .employee_container .employee_title, .represents .represents_container .represents_title, .abouts_ideas .abouts_ideas_container .abouts_ideas_title {
+.abouts_company .abouts_company_container .abouts_company_title, .abouts_employee .abouts_employee_container .abouts_employee_title, .abouts_represents .abouts_represents_container .abouts_represents_title, .abouts_ideas .abouts_ideas_container .abouts_ideas_title {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,7 +95,7 @@
           align-items: center;
   color: #D89F1C;
 }
-.company .company_container .company_title p, .employee .employee_container .employee_title p, .represents .represents_container .represents_title p, .abouts_ideas .abouts_ideas_container .abouts_ideas_title p {
+.abouts_company .abouts_company_container .abouts_company_title p, .abouts_employee .abouts_employee_container .abouts_employee_title p, .abouts_represents .abouts_represents_container .abouts_represents_title p, .abouts_ideas .abouts_ideas_container .abouts_ideas_title p {
   font-size: clamp(1px,2.0833333333vw,30px);
   font-weight: bold;
   font-family: "NotoSansCJKjp", sans-serif;
@@ -103,7 +103,7 @@
   padding: 20px 0 0;
   text-align: center;
 }
-.company .company_container .company_title div, .employee .employee_container .employee_title div, .represents .represents_container .represents_title div, .abouts_ideas .abouts_ideas_container .abouts_ideas_title div {
+.abouts_company .abouts_company_container .abouts_company_title div, .abouts_employee .abouts_employee_container .abouts_employee_title div, .abouts_represents .abouts_represents_container .abouts_represents_title div, .abouts_ideas .abouts_ideas_container .abouts_ideas_title div {
   display: block;
   height: 1px;
   margin: 0 auto;
@@ -143,10 +143,10 @@
 }
 .abouts_top_img .item_top_img_bg img {
   width: 100%;
+  height: 100%;
   position: absolute;
   left: 0;
   z-index: -1;
-  top: -10.417vw;
 }
 .abouts_top_img .item_top_img_bg .item_top_img_bg_dots {
   width: 100%;
@@ -193,7 +193,7 @@
   margin-top: 47.7272vh;
 }
 
-.employee .employee_ideas_bg_right, .abouts_ideas .abouts_ideas_bg_right {
+.abouts_employee .abouts_employee_ideas_bg_right, .abouts_ideas .abouts_ideas_bg_right {
   width: 39.931vw;
   height: 48.264vw;
   background: url(../res/bg_right.png) no-repeat;
@@ -204,7 +204,7 @@
   z-index: -1;
 }
 
-.company .company_ideas_bg_left, .represents .represents_ideas_bg_left {
+.abouts_company .abouts_company_ideas_bg_left, .abouts_represents .abouts_represents_ideas_bg_left {
   width: 39.931vw;
   height: 48.264vw;
   background: url(../res/bg_left.png) no-repeat;
@@ -234,7 +234,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.abouts_ideas .abouts_ideas_container .ideas_content {
+.abouts_ideas .abouts_ideas_container .abouts_ideas_content {
   width: 91.389vw;
   padding-top: 5.903vw;
   margin-left: 2.778vw;
@@ -249,11 +249,11 @@
       -ms-flex-align: start;
           align-items: flex-start;
 }
-.abouts_ideas .abouts_ideas_container .ideas_content img {
+.abouts_ideas .abouts_ideas_container .abouts_ideas_content img {
   width: auto;
   width: 47.569vw;
 }
-.abouts_ideas .abouts_ideas_container .ideas_content p {
+.abouts_ideas .abouts_ideas_container .abouts_ideas_content p {
   width: 41.667vw;
   padding-left: 2.083vw;
   font-size: clamp(1px,1.25vw,18px);
@@ -261,7 +261,7 @@
   line-height: 1.5;
 }
 
-.represents {
+.abouts_represents {
   width: 100%;
   padding-top: 0;
   padding-bottom: 8.681vw;
@@ -269,7 +269,7 @@
           box-sizing: border-box;
   position: relative;
 }
-.represents .represents_container {
+.abouts_represents .abouts_represents_container {
   width: 66.319vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -284,33 +284,33 @@
   padding-top: 9.375vw;
   margin: 0 auto;
 }
-.represents .represents_container .represents_title {
+.abouts_represents .abouts_represents_container .abouts_represents_title {
   color: #234670;
 }
-.represents .represents_container .represents_title div {
+.abouts_represents .abouts_represents_container .abouts_represents_title div {
   width: 14.931vw;
   border-bottom: 3px solid #234670;
 }
-.represents .represents_container .represents_img {
+.abouts_represents .abouts_represents_container .abouts_represents_img {
   width: 49.653vw;
   margin: 0 auto;
   margin-top: 4.167vw;
 }
-.represents .represents_container span {
+.abouts_represents .abouts_represents_container span {
   font-size: clamp(1px,1.6666666667vw,24px);
   font-family: "NotoSansCJKjp";
   font-weight: bold;
   text-align: center;
   margin-top: 2.778vw;
 }
-.represents .represents_container .represents_p {
+.abouts_represents .abouts_represents_container .represents_p {
   font-size: clamp(1px,1.25vw,18px);
   font-family: "NotoSansCJKjp";
   text-align: left;
   margin-top: 5.972vw;
 }
 
-.employee {
+.abouts_employee {
   width: 100%;
   padding-top: 0;
   padding-bottom: 10.833vw;
@@ -318,7 +318,7 @@
           box-sizing: border-box;
   position: relative;
 }
-.employee .employee_container {
+.abouts_employee .abouts_employee_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -333,11 +333,11 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.employee .employee_container .employee_title div {
+.abouts_employee .abouts_employee_container .abouts_employee_title div {
   width: 15vw;
   border-bottom: 3px solid #D89F1C;
 }
-.employee .employee_container .employee_list {
+.abouts_employee .abouts_employee_container .abouts_employee_list {
   margin-top: 6.25vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -354,7 +354,7 @@
           align-items: flex-end;
   width: 100%;
 }
-.employee .employee_container .employee_list .employee_item {
+.abouts_employee .abouts_employee_container .abouts_employee_list .abouts_employee_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,10 +367,10 @@
           align-items: center;
   width: 31.25vw;
 }
-.employee .employee_container .employee_list .employee_item img {
+.abouts_employee .abouts_employee_container .abouts_employee_list .abouts_employee_item img {
   width: 31.25vw;
 }
-.employee .employee_container .employee_list .employee_item .employee_name {
+.abouts_employee .abouts_employee_container .abouts_employee_list .abouts_employee_item .abouts_employee_name {
   font-size: clamp(1px,1.6666666667vw,24px);
   font-family: "NotoSansCJKjp";
   font-weight: bold;
@@ -378,13 +378,13 @@
   margin-top: 2.083vw;
   margin-bottom: 4.167vw;
 }
-.employee .employee_container .employee_list .employee_item .employee_btn {
+.abouts_employee .abouts_employee_container .abouts_employee_list .abouts_employee_item .abouts_employee_btn {
   background-color: #D89F1C;
   border-radius: 2.083vw;
   color: #FFFFFF;
 }
 
-.company {
+.abouts_company {
   width: 100%;
   padding-top: 0;
   padding-bottom: 18.056vw;
@@ -392,7 +392,7 @@
           box-sizing: border-box;
   position: relative;
 }
-.company .company_container {
+.abouts_company .abouts_company_container {
   width: 89.583vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -407,14 +407,14 @@
   padding-top: 9.375vw;
   margin: 0 auto;
 }
-.company .company_container .company_title {
+.abouts_company .abouts_company_container .abouts_company_title {
   color: #234670;
 }
-.company .company_container .company_title div {
+.abouts_company .abouts_company_container .abouts_company_title div {
   width: 14.931vw;
   border-bottom: 3px solid #234670;
 }
-.company .company_container .company_list {
+.abouts_company .abouts_company_container .abouts_company_list {
   margin: 0 auto;
   margin-top: 4.861vw;
   display: -webkit-box;
@@ -425,7 +425,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.company .company_container .company_list .company_imgbox {
+.abouts_company .abouts_company_container .abouts_company_list .abouts_company_imgbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -437,19 +437,19 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.company .company_container .company_list .company_imgbox img {
+.abouts_company .abouts_company_container .abouts_company_list .abouts_company_imgbox img {
   padding: 1.042vw;
   width: 28.472vw;
   height: 28.472vw;
 }
-.company .company_right {
+.abouts_company .abouts_company_right {
   height: 2.326vw;
   position: absolute;
   bottom: 10.278vw;
   right: 2.083vw;
   z-index: -1;
 }
-.company .company_right:hover {
+.abouts_company .abouts_company_right:hover {
   cursor: pointer;
   opacity: 0.6;
 }/*# sourceMappingURL=aboutus.css.map */
