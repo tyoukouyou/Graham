@@ -152,6 +152,46 @@
   z-index: -1;
 }
 
+@media (max-width: 1000px) {
+  .recruit_top_img {
+    width: 100%;
+    height: 63.725vh;
+    position: relative;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-top: 10.667vw;
+    padding-bottom: 14.705vh;
+  }
+  .recruit_top_img .item_top_img_bg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+  .recruit_top_img .item_top_img_bg .item_top_img_left {
+    margin-top: 2.9412vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: auto;
+    margin-left: 4vw;
+  }
+  .recruit_top_img .item_top_img_bg .item_top_img_left h1 {
+    width: auto;
+    color: #FFFFFF;
+  }
+  .recruit_top_img .item_top_img_bg .item_top_img_left h2 {
+    color: #FFFFFF;
+    margin-top: 2.667vw;
+  }
+}
+
 .recruit_purpose {
   width: 100%;
   padding-top: 0;
@@ -162,6 +202,13 @@
 }
 .recruit_purpose .recruit_purpose_bg_right {
   top: -9.028vw;
+}
+@media (max-width: 1000px) {
+  .recruit_purpose .recruit_purpose_bg_right {
+    width: 76.667vw;
+    height: 92.667vw;
+    background-position: 11.333vw 0px;
+  }
 }
 .recruit_purpose .recruit_purpose_container {
   display: -webkit-box;
@@ -224,6 +271,13 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
+}
+@media (max-width: 1000px) {
+  .recruit_value .represents_ideas_bg_left {
+    width: 76.667vw;
+    height: 92.667vw;
+    background-position: 0px 0px;
+  }
 }
 .recruit_value .recruit_value_container {
   width: 66.319vw;
@@ -292,6 +346,13 @@
           box-sizing: border-box;
   position: relative;
 }
+@media (max-width: 1000px) {
+  .recruit_data .recruit_data_bg_right {
+    width: 76.667vw;
+    height: 92.667vw;
+    background-position: 11.333vw 0px;
+  }
+}
 .recruit_data .recruit_data_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -357,6 +418,13 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
+}
+@media (max-width: 1000px) {
+  .recruit_employee .represents_ideas_bg_left {
+    width: 76.667vw;
+    height: 92.667vw;
+    background-position: 0px 0px;
+  }
 }
 .recruit_employee .recruit_employee_container {
   width: 81.25vw;

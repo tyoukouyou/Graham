@@ -5,6 +5,43 @@
 .abouts_top_img {
     @extend %item_top_img;
 
+    @media (max-width: 1000px) {
+        width: 100%;
+        height: 63.725vh;
+        position: relative;
+        box-sizing: border-box;
+        padding-top: 10.667vw;
+        padding-bottom: 14.705vh;
+
+        .item_top_img_bg {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+
+            .item_top_img_left {
+                margin-top: 2.9412vh;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: auto;
+                margin-left: 4vw;
+
+                h1 {
+                    width: auto;
+                    color: $font_color4;
+
+                }
+
+                h2 {
+                    color: $font_color4;
+                    margin-top: 2.667vw;
+                }
+
+            }
+        }
+
+
+    }
 }
 
 .abouts_ideas {
@@ -16,6 +53,13 @@
     .abouts_ideas_bg_right {
         @extend %bg_right;
         top: -9.028vw;
+        @media (max-width: 1000px) {
+            width: 76.667vw;
+            height: 92.667vw;
+            background-position: 9.867vw 0px;
+            top: -13.333vw;
+        }
+
     }
 
 
@@ -62,6 +106,11 @@
 
     .abouts_represents_ideas_bg_left {
         @extend %bg_left;
+        @media (max-width: 1000px) {
+            width: 76.667vw;
+            height: 92.667vw;
+            background-position: 0px 0px;
+        }
     }
 
     .abouts_represents_container {
@@ -117,6 +166,12 @@
 
     .abouts_employee_ideas_bg_right {
         @extend %bg_right;
+        @media (max-width: 1000px) {
+            width: 76.667vw;
+            height: 92.667vw;
+            background-position: 9.867vw 0px;
+            top: -13.333vw;
+        }
     }
 
     .abouts_employee_container {
@@ -187,6 +242,11 @@
 
     .abouts_company_ideas_bg_left {
         @extend %bg_left;
+        @media (max-width: 1000px) {
+            width: 76.667vw;
+            height: 92.667vw;
+            background-position: 0px 0px;
+        }
     }
 
     .abouts_company_container {
