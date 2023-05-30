@@ -726,29 +726,27 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        align-items: center;
-        height: 60.764vw;
+        align-items: flex-start;
+        height: 68.056vw;
         transform: skewY(3deg);
         background-color: $button_color;
         margin-top: 5.556vw;
-        padding-bottom: 15px;
 
         @media (max-width: 1000px) {
             width: 100%;
             display: flex;
             flex-direction: row;
-            align-items: center;
+            align-items: flex-start;
             height: 62vw;
             transform: skewY(3deg);
             background-color: $button_color;
             margin-top: 14.667vw;
-            padding-bottom: 2vw;
         }
 
         img {
             position: relative;
-            height: 100%;
             width: 20%;
+            height: 55.556vw;
             border: 0;
             padding: 0;
             margin: 0;
@@ -852,6 +850,7 @@
                 .top_services_body_bg_left {
                     @extend %bg_left;
                     top: 2.778vw;
+                    left: -2.083vw;
 
                     @media (max-width: 1000px) {
                         width: 76.667vw;
@@ -1137,7 +1136,7 @@
     }
 
     .top_services_bottom {
-        margin-top: 5.208vw;
+        margin-top: 10.069vw;
         width: 100%;
         height: 2.778vw;
         background-color: $theme_color;
@@ -1180,13 +1179,19 @@
         }
 
         a {
+            padding-left: 1em;
+            padding-right: 1em;
             &:hover {
                 opacity: 0.6;
             }
         }
+        br{
+            height: 0.694vw
+        }
 
         h1 {
             @extend %home_h1;
+            font-size: font-adapter(130);
             color: $font_color5;
 
             @media (max-width: 1000px) {
@@ -1199,6 +1204,8 @@
             color: $font_color5;
             margin-top: 2.083vw;
             margin-bottom: 5.208vw;
+            font-size: font-adapter(40);
+
 
             @media (max-width: 1000px) {
                 font-size: sfont-adapter(30);
@@ -1215,6 +1222,7 @@
             padding-top: 1.875vw;
             padding-bottom: 1.875vw;
             font-weight: normal;
+            line-height: 1;
 
             @media (max-width: 1000px) {
                 font-size: sfont-adapter(16);
@@ -1225,7 +1233,6 @@
             span {
                 font-weight: bold;
                 display: block;
-                margin-bottom: 0.1vw;
 
                 @media (max-width: 1000px) {
                     font-size: sfont-adapter(16);
