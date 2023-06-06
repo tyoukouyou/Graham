@@ -1,0 +1,208 @@
+@import '../css/init_style.css';
+@import 'modules/pxtovw.scss';
+@import 'modules/_variable.scss';
+
+
+.contact_container {
+    padding-top: 80px;
+    background: #f9f7f6;
+
+    form {
+        margin: 0 auto;
+        width: 65.278vw;
+
+        .form_container {
+            border-radius: 0.347vw;
+            background: $background_color;
+            padding-top: 4.167vw;
+            padding-bottom: 4.167vw;
+            padding-left: 10.139vw;
+            padding-right: 10.139vw;
+            margin: 0 auto;
+
+            button {
+                padding: 0;
+                outline: none;
+                appearance: none;
+                border: 0;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0.278vw;
+                margin: 3.194vw auto 0;
+                width: 29.583vw;
+                height: 2.917vw;
+                background: #b7b2b2;
+                font-weight: bold;
+                font-size: 0.972vw;
+                color: #f9f7f6;
+
+                &.active {
+                    background: #0707ab;
+                }
+            }
+
+            .contact_checkbox {
+                display: flex;
+                flex-wrap: wrap;
+
+                label {
+                    position: relative;
+                    cursor: pointer;
+                    user-select: none;
+                    display: inline-block;
+                    font-weight: normal;
+                    font-size: font-adapter(16);
+
+                    input {
+                        position: absolute;
+                        opacity: 0;
+                        height: 0;
+                        cursor: pointer;
+
+                        &:checked~span:after {
+                            display: block;
+                        }
+                    }
+
+                    span {
+                        position: relative;
+                        transform: translateZ(0);
+                        display: inline-block;
+                        padding: 0 0 0 2.222vw;
+
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 0;
+                            border-radius: 0;
+                            width: 1.111vw;
+                            height: 1.111vw;
+                            background: #f9f7f6;
+                            border: 0.069vw solid #b7b2b2;
+                        }
+
+                        &::after {
+                            left: 0.417vw;
+                            top: 0.417vw;
+                            width: 0.347vw;
+                            height: 0.694vw;
+                            border: solid #000;
+                            border-width: 0 0.139vw 0.139vw 0;
+                            transform: rotate(45deg);
+                            content: "";
+                            position: absolute;
+                            display: none;
+                        }
+                    }
+
+
+                }
+            }
+
+            dl {
+                margin-bottom: 1.944vw;
+
+                dt {
+                    font-weight: bold;
+                    font-size: font-adapter(16);
+                    margin-bottom: 0.556vw;
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        width: 2.847vw;
+                        height: 1.389vw;
+                        border-radius: 0.278vw;
+                        background: #0707ab;
+                        font-weight: bold;
+                        font-size: font-adapter(12);
+                        color: #fff;
+                        margin-right: 0.347vw;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+                dd {
+                    input {
+                        width: 100%;
+                        padding: 0 0.833vw;
+                        outline: none;
+                        font-size: font-adapter(14);
+                        color: #000;
+
+                        appearance: none;
+                        height: 3.333vw;
+                        border-radius: 0.278vw;
+                        background: #f9f7f6;
+                        border: 0.069vw solid #b7b2b2;
+
+                        &::placeholder {
+                            color: #b7b2b2;
+                            opacity: 1;
+                            font-weight: 500;
+                        }
+                    }
+
+                    textarea {
+                        width: 100%;
+                        height: 21.667vw;
+                        padding: 0.694vw 0.833vw;
+                        outline: none;
+                        font-size: font-adapter(14);
+                        color: #000;
+                        appearance: none;
+                        border-radius: 0.278vw;
+                        background: #f9f7f6;
+                        border: 0.069vw solid #b7b2b2;
+
+
+                        &::placeholder {
+                            color: #b7b2b2;
+                            opacity: 1;
+                            font-weight: 500;
+                        }
+
+                        .error {
+                            background: #ffe8e8;
+                            border: 0.069vw solid #f94848;
+                        }
+                    }
+
+
+
+                    .contact_privacy {
+                        width: 31.944vw;
+                        height: 10.278vw;
+                        max-width: 100%;
+                        overflow-x: hidden;
+                        overflow-y: scroll;
+                        margin: 0 auto;
+                        margin-top: 2rem;
+                        margin-bottom: 2rem;
+                        border-radius: 0.278vw;
+                        border: 0.069vw solid #707070;
+
+                        .contact_privacy_container {
+                            box-sizing: border-box;
+                            padding: 1.111vw 2.222vw;
+
+                            .contact_privacy_content {
+                                font-size: font-adapter(14);
+                            }
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+    }
+
+}

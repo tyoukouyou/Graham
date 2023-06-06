@@ -1,0 +1,242 @@
+@import '../css/init_style.css';
+.contact_container {
+  padding-top: 80px;
+  background: #f9f7f6;
+}
+.contact_container form {
+  margin: 0 auto;
+  width: 65.278vw;
+}
+.contact_container form .form_container {
+  border-radius: 0.347vw;
+  background: #FFFFFF;
+  padding-top: 4.167vw;
+  padding-bottom: 4.167vw;
+  padding-left: 10.139vw;
+  padding-right: 10.139vw;
+  margin: 0 auto;
+}
+.contact_container form .form_container button {
+  padding: 0;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.278vw;
+  margin: 3.194vw auto 0;
+  width: 29.583vw;
+  height: 2.917vw;
+  background: #b7b2b2;
+  font-weight: bold;
+  font-size: 0.972vw;
+  color: #f9f7f6;
+}
+.contact_container form .form_container button.active {
+  background: #0707ab;
+}
+.contact_container form .form_container .contact_checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.contact_container form .form_container .contact_checkbox label {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: inline-block;
+  font-weight: normal;
+  font-size: clamp(1px,1.1111111111vw,16px);
+}
+.contact_container form .form_container .contact_checkbox label input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  cursor: pointer;
+}
+.contact_container form .form_container .contact_checkbox label input:checked ~ span:after {
+  display: block;
+}
+.contact_container form .form_container .contact_checkbox label span {
+  position: relative;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  display: inline-block;
+  padding: 0 0 0 2.222vw;
+}
+.contact_container form .form_container .contact_checkbox label span::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  border-radius: 0;
+  width: 1.111vw;
+  height: 1.111vw;
+  background: #f9f7f6;
+  border: 0.069vw solid #b7b2b2;
+}
+.contact_container form .form_container .contact_checkbox label span::after {
+  left: 0.417vw;
+  top: 0.417vw;
+  width: 0.347vw;
+  height: 0.694vw;
+  border: solid #000;
+  border-width: 0 0.139vw 0.139vw 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  content: "";
+  position: absolute;
+  display: none;
+}
+.contact_container form .form_container dl {
+  margin-bottom: 1.944vw;
+}
+.contact_container form .form_container dl dt {
+  font-weight: bold;
+  font-size: clamp(1px,1.1111111111vw,16px);
+  margin-bottom: 0.556vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact_container form .form_container dl dt span {
+  width: 2.847vw;
+  height: 1.389vw;
+  border-radius: 0.278vw;
+  background: #0707ab;
+  font-weight: bold;
+  font-size: clamp(1px,0.8333333333vw,12px);
+  color: #fff;
+  margin-right: 0.347vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact_container form .form_container dl dd input {
+  width: 100%;
+  padding: 0 0.833vw;
+  outline: none;
+  font-size: clamp(1px,0.9722222222vw,14px);
+  color: #000;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 3.333vw;
+  border-radius: 0.278vw;
+  background: #f9f7f6;
+  border: 0.069vw solid #b7b2b2;
+}
+.contact_container form .form_container dl dd input::-webkit-input-placeholder {
+  color: #b7b2b2;
+  opacity: 1;
+  font-weight: 500;
+}
+.contact_container form .form_container dl dd input::-moz-placeholder {
+  color: #b7b2b2;
+  opacity: 1;
+  font-weight: 500;
+}
+.contact_container form .form_container dl dd input:-ms-input-placeholder {
+  color: #b7b2b2;
+  opacity: 1;
+  font-weight: 500;
+}
+.contact_container form .form_container dl dd input::-ms-input-placeholder {
+  color: #b7b2b2;
+  opacity: 1;
+  font-weight: 500;
+}
+.contact_container form .form_container dl dd input::placeholder {
+  color: #b7b2b2;
+  opacity: 1;
+  font-weight: 500;
+}
+.contact_container form .form_container dl dd textarea {
+  width: 100%;
+  height: 21.667vw;
+  padding: 0.694vw 0.833vw;
+  outline: none;
+  font-size: clamp(1px,0.9722222222vw,14px);
+  color: #000;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0.278vw;
+  background: #f9f7f6;
+  border: 0.069vw solid #b7b2b2;
+}
+.contact_container form .form_container dl dd textarea::-webkit-input-placeholder {
+  color: #b7b2b2;
+  opacity: 1;
+  font-weight: 500;
+}
+.contact_container form .form_container dl dd textarea::-moz-placeholder {
+  color: #b7b2b2;
+  opacity: 1;
+  font-weight: 500;
+}
+.contact_container form .form_container dl dd textarea:-ms-input-placeholder {
+  color: #b7b2b2;
+  opacity: 1;
+  font-weight: 500;
+}
+.contact_container form .form_container dl dd textarea::-ms-input-placeholder {
+  color: #b7b2b2;
+  opacity: 1;
+  font-weight: 500;
+}
+.contact_container form .form_container dl dd textarea::placeholder {
+  color: #b7b2b2;
+  opacity: 1;
+  font-weight: 500;
+}
+.contact_container form .form_container dl dd textarea .error {
+  background: #ffe8e8;
+  border: 0.069vw solid #f94848;
+}
+.contact_container form .form_container dl dd .contact_privacy {
+  width: 31.944vw;
+  height: 10.278vw;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.278vw;
+  border: 0.069vw solid #707070;
+}
+.contact_container form .form_container dl dd .contact_privacy .contact_privacy_container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1.111vw 2.222vw;
+}
+.contact_container form .form_container dl dd .contact_privacy .contact_privacy_container .contact_privacy_content {
+  font-size: clamp(1px,0.9722222222vw,14px);
+}/*# sourceMappingURL=contact.css.map */
