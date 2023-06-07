@@ -2,14 +2,81 @@
 @import 'modules/pxtovw.scss';
 @import 'modules/_variable.scss';
 
+.contact_top {
+    width: 100%;
+    padding-top: 80px;
+
+    @media (max-width: 1000px) {
+        width: 100%;
+        padding-top: 10.667vw;
+    }
+
+
+    .item_top_img_left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50vw;
+        margin-top: 2.778vwvw;
+        margin-left: 2.778vw;
+        color: $font_color5;
+
+        @media (max-width: 1000px) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: auto;
+            margin-left: 4vw;
+        }
+
+        h1 {
+            @extend %home_h1;
+            width: 50vw;
+            color: $font_color5;
+
+            @media (max-width: 1000px) {
+                width: auto;
+                color: $font_color5;
+            }
+
+        }
+
+        h2 {
+            @extend %home_h2;
+            color: $font_color5;
+            margin-top: 2.7027vh;
+
+            @media (max-width: 1000px) {
+                color: $font_color5;
+                margin-top: 2.667vw;
+            }
+        }
+
+    }
+
+}
+
+
 
 .contact_container {
-    padding-top: 80px;
-    background: #f9f7f6;
+    width: 65.278vw;
+    margin: 0 auto;
+    padding-bottom: 6.944vw;
+
+    @media (max-width: 1000px) {
+        width: 86.667vw;
+        margin: 0 auto;
+        padding-bottom: 13.333vw;
+    }
 
     form {
         margin: 0 auto;
-        width: 65.278vw;
+        width: 100%;
+
+        @media (max-width: 1000px) {
+            width: 100%;
+            margin: 0 auto;
+        }
 
         .form_container {
             border-radius: 0.347vw;
@@ -19,6 +86,16 @@
             padding-left: 10.139vw;
             padding-right: 10.139vw;
             margin: 0 auto;
+
+            @media (max-width: 1000px) {
+                border-radius: 0.347vw;
+                background: $background_color;
+                padding-top: 10.667vw;
+                padding-bottom: 10.667vw;
+                padding-left: 5.333vw;
+                padding-right: 5.333vw;
+                margin: 0 auto;
+            }
 
             button {
                 padding: 0;
@@ -33,19 +110,47 @@
                 margin: 3.194vw auto 0;
                 width: 29.583vw;
                 height: 2.917vw;
-                background: #b7b2b2;
+                background: $contact_inputbg;
                 font-weight: bold;
-                font-size: 0.972vw;
-                color: #f9f7f6;
+                font-size: font-adapter(14);
+                color: $contact_inputbg3;
+
+                @media (max-width: 1000px) {
+                    padding: 0;
+                    outline: none;
+                    appearance: none;
+                    border: 0;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 1.06667vw;
+                    margin: 8.533vw auto 0;
+                    width: 100%;
+                    height: 11.2vw;
+                    background: $contact_inputbg;
+                    font-weight: bold;
+                    font-size: sfont-adapter(28);
+                    color: $contact_inputbg3;
+                }
 
                 &.active {
-                    background: #0707ab;
+                    background: $contact_span;
+
+                    @media (max-width: 1000px) {
+                        background: $contact_span;
+                    }
                 }
             }
 
             .contact_checkbox {
                 display: flex;
                 flex-wrap: wrap;
+
+                @media (max-width: 1000px) {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
 
                 label {
                     position: relative;
@@ -55,11 +160,27 @@
                     font-weight: normal;
                     font-size: font-adapter(16);
 
+                    @media (max-width: 1000px) {
+                        position: relative;
+                        cursor: pointer;
+                        user-select: none;
+                        display: inline-block;
+                        font-weight: normal;
+                        font-size: sfont-adapter(32);
+                    }
+
                     input {
                         position: absolute;
                         opacity: 0;
                         height: 0;
                         cursor: pointer;
+
+                        @media (max-width: 1000px) {
+                            position: absolute;
+                            opacity: 0;
+                            height: 0;
+                            cursor: pointer;
+                        }
 
                         &:checked~span:after {
                             display: block;
@@ -72,6 +193,13 @@
                         display: inline-block;
                         padding: 0 0 0 2.222vw;
 
+                        @media (max-width: 1000px) {
+                            position: relative;
+                            transform: translateZ(0);
+                            display: inline-block;
+                            padding: 0 0 0 8.53333vw;
+                        }
+
                         &::before {
                             position: absolute;
                             content: "";
@@ -81,8 +209,22 @@
                             border-radius: 0;
                             width: 1.111vw;
                             height: 1.111vw;
-                            background: #f9f7f6;
-                            border: 0.069vw solid #b7b2b2;
+                            background: $contact_inputbg3;
+                            border: 0.069vw solid $contact_inputbg;
+
+                            @media (max-width: 1000px) {
+                                position: absolute;
+                                content: "";
+                                top: 50%;
+                                transform: translateY(-50%);
+                                left: 0;
+                                -moz-border-radius: 0;
+                                border-radius: 0;
+                                width: 4.26667vw;
+                                height: 4.26667vw;
+                                background: $contact_inputbg3;
+                                border: 1px solid $contact_inputbg;
+                            }
                         }
 
                         &::after {
@@ -90,12 +232,25 @@
                             top: 0.417vw;
                             width: 0.347vw;
                             height: 0.694vw;
-                            border: solid #000;
+                            border: solid $font_color5;
                             border-width: 0 0.139vw 0.139vw 0;
                             transform: rotate(45deg);
                             content: "";
                             position: absolute;
                             display: none;
+
+                            @media (max-width: 1000px) {
+                                left: 1.6vw;
+                                top: 1.6vw;
+                                width: 1.33333vw;
+                                height: 2.66667vw;
+                                border: solid $font_color5;
+                                border-width: 0 0.53333vw 0.53333vw 0;
+                                transform: rotate(45deg);
+                                content: "";
+                                position: absolute;
+                                display: none;
+                            }
                         }
                     }
 
@@ -106,6 +261,10 @@
             dl {
                 margin-bottom: 1.944vw;
 
+                @media (max-width: 1000px) {
+                    margin-bottom: 5.33333vw;
+                }
+
                 dt {
                     font-weight: bold;
                     font-size: font-adapter(16);
@@ -113,39 +272,81 @@
                     display: flex;
                     align-items: center;
 
+                    @media (max-width: 1000px) {
+                        font-weight: bold;
+                        font-size: sfont-adapter(32);
+                        margin-bottom: 2.13333vw;
+                        display: flex;
+                        align-items: center;
+                    }
+
                     span {
                         width: 2.847vw;
                         height: 1.389vw;
                         border-radius: 0.278vw;
-                        background: #0707ab;
+                        background: $contact_span;
                         font-weight: bold;
                         font-size: font-adapter(12);
-                        color: #fff;
+                        color: $background_color;
                         margin-right: 0.347vw;
                         display: flex;
                         justify-content: center;
                         align-items: center;
+
+                        @media (max-width: 1000px) {
+                            width: 10.93333vw;
+                            height: 5.33333vw;
+                            border-radius: 1.06667vw;
+                            background: $contact_span;
+                            font-weight: bold;
+                            font-size: sfont-adapter(24);
+                            color: $background_color;
+                            margin-right: 1.33333vw;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
                     }
                 }
 
                 dd {
+                    @media (max-width: 1000px) {}
+
                     input {
                         width: 100%;
                         padding: 0 0.833vw;
                         outline: none;
                         font-size: font-adapter(14);
-                        color: #000;
-
+                        color: $font_color5;
                         appearance: none;
                         height: 3.333vw;
                         border-radius: 0.278vw;
-                        background: #f9f7f6;
-                        border: 0.069vw solid #b7b2b2;
+                        background: $contact_inputbg3;
+                        border: 0.069vw solid $contact_inputbg;
+
+                        @media (max-width: 1000px) {
+                            width: 100%;
+                            padding: 0 3.2vw;
+                            outline: none;
+                            font-size: sfont-adapter(16);
+                            color: #000;
+                            appearance: none;
+                            height: 12.8vw;
+                            border-radius: 1.06667vw;
+                            background: $contact_inputbg3;
+                            border: 1px solid $contact_inputbg;
+                        }
 
                         &::placeholder {
-                            color: #b7b2b2;
+                            color: $contact_inputbg;
                             opacity: 1;
                             font-weight: 500;
+
+                            @media (max-width: 1000px) {
+                                color: $contact_inputbg;
+                                opacity: 1;
+                                font-weight: 500;
+                            }
                         }
                     }
 
@@ -155,22 +356,46 @@
                         padding: 0.694vw 0.833vw;
                         outline: none;
                         font-size: font-adapter(14);
-                        color: #000;
+                        color: $font_color5;
                         appearance: none;
                         border-radius: 0.278vw;
-                        background: #f9f7f6;
-                        border: 0.069vw solid #b7b2b2;
+                        background: $contact_inputbg3;
+                        border: 0.069vw solid $contact_inputbg;
+
+                        @media (max-width: 1000px) {
+                            width: 100%;
+                            height: 62.93333vw;
+                            padding: 2.66667vw 3.2vw;
+                            outline: none;
+                            font-size: sfont-adapter(16);
+                            color: #000;
+                            appearance: none;
+                            border-radius: 1.06667vw;
+                            background: $contact_inputbg3;
+                            border: 1px solid $contact_inputbg;
+                        }
 
 
                         &::placeholder {
-                            color: #b7b2b2;
+                            color: $contact_inputbg;
                             opacity: 1;
                             font-weight: 500;
+
+                            @media (max-width: 1000px) {
+                                color: $contact_inputbg;
+                                opacity: 1;
+                                font-weight: 500;
+                            }
                         }
 
                         .error {
                             background: #ffe8e8;
                             border: 0.069vw solid #f94848;
+
+                            @media (max-width: 1000px) {
+                                background: #ffe8e8;
+                                border: 1px solid #f94848;
+                            }
                         }
                     }
 
@@ -186,14 +411,39 @@
                         margin-top: 2rem;
                         margin-bottom: 2rem;
                         border-radius: 0.278vw;
-                        border: 0.069vw solid #707070;
+                        border: 0.069vw solid $contact_inputbg2;
+
+                        @media (max-width: 1000px) {
+                            width: 61.333vw;
+                            height: 19.733vw;
+                            max-width: 100%;
+                            overflow-x: hidden;
+                            overflow-y: scroll;
+                            margin: 0 auto;
+                            margin-top: 2rem;
+                            margin-bottom: 2rem;
+                            border-radius: 0.533vw;
+                            border: 0.133vw solid #707070;
+                        }
 
                         .contact_privacy_container {
                             box-sizing: border-box;
                             padding: 1.111vw 2.222vw;
+                            @media (max-width: 1000px) {
+                                box-sizing: border-box;
+                                padding: 2.133vw 4.267vw;
+                            }
+
 
                             .contact_privacy_content {
                                 font-size: font-adapter(14);
+
+                                @media (max-width: 1000px) {
+                                    font-size: sfont-adapter(14);
+                                    letter-spacing: 0.08em;
+                                    line-height: 1.75;
+                                    color: #000;
+                                }
                             }
                         }
                     }

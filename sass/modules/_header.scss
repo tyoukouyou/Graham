@@ -41,10 +41,12 @@ header {
         .header_logo {
             width: 16.527vw;
             height: 80px;
+            margin-left: 3.472vw;
 
             @media (max-width: 1000px) {
                 width: 31.733vw;
                 height: 100%;
+                margin-left: 2.667vw;
             }
         }
 
